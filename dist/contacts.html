@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Газета «Иркутск»</title>
+</head>
+
+<body>
+	
+	<div class="wrapper">	
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="headerTop d-none d-md-block">
+      <div class="row align-items-center">
+        <div class="col-md-8 col-lg-6 col-xl-8">
+          <div class="headerContacts d-flex">
+            <div class="item d-flex gap-1">
+              <span>Телефон редакции:</span>
+              <a class="phone fw-semibold" href="tel:+73952261236">+7 (3952) 26-12-36</a>
+            </div>
+            <div class="item d-none d-xl-block">
+              <div class="d-flex gap-1">
+                <span>Электронная почта редакции:</span>
+                <a class="mail text--blue-2" href="mailto:site@mauirk.ru">site@mauirk.ru</a>
+              </div>
+            </div>
+            <div class="item socials">
+              <ul class="socialsList">
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-1.svg" alt="icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-2.svg" alt="icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-3.svg" alt="icon">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-6 col-xl-4">
+          <div class="headerTopRight d-flex align-items-center justify-content-end">
+            <ul class="d-none d-lg-flex text--blue-2">
+              <li>
+                <a href="#">
+                  Редакция
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Реклама
+                </a>
+              </li>
+            </ul>
+            <button class="button headerBtn button--blue-2">Сообщить новость</button>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- /headerTop -->
+    <div class="headerBottom">
+      <div class="row">
+        <div class="col-lg-9 col-xl-8">
+          <div class="d-flex align-items-center headerBottomLeft">
+            <a href="/" class="logo headerLogo">
+              <img src="img/admin/header/logo.png" alt="logo">
+            </a>
+            <nav class="headerNav">
+              <ul
+                class="headerNavList align-items-center align-items-lg-start flex-column flex-lg-row d-flex fw-medium">
+                <li>
+                  <a href="#">
+                    Новости
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Газеты
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Правовой портал
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Подкасты
+                  </a>
+                </li>
+              </ul>
+              <div class="d-flex d-lg-none item align-items-center flex-column gap-1 mb-3 text--sm">
+                <span>Телефон редакции:</span>
+                <a class="phone fw-semibold" href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              </div>
+              <div class="d-flex d-lg-none item flex-column gap-1 text--sm">
+                <div class="d-flex flex-column align-items-center gap-1">
+                  <span>Электронная почта редакции:</span>
+                  <a class="mail text--blue-2" href="mailto:site@mauirk.ru">site@mauirk.ru</a>
+                </div>
+              </div>
+              <div class="item socials mt-3 d-block d-lg-none">
+                <ul class="socialsList justify-content-center">
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-1.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-2.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-3.svg" alt="icon">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="d-flex flex-column align-items-center d-lg-none mt-3 text--blue-2">
+                <li>
+                  <a href="#">
+                    Редакция
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Реклама
+                  </a>
+                </li>
+              </ul>
+              <button class="button headerBtn d-flex d-lg-none button--blue-2 mx-auto mt-3">Сообщить новость</button>
+              <div class="headerNavCloseBtn d-block d-lg-none">
+                <img src="img/icons/btn-close.svg" alt="icon">
+              </div>
+            </nav>
+            <button class="headerSearchBtn">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#search"></use>
+              </svg>
+            </button>
+            <div class="hamburger" id="toggle">
+              <div class="top-bun"></div>
+              <div class="meat"></div>
+              <div class="bottom-bun"></div>
+            </div><!-- /Hamburger Menu -->
+          </div>
+        </div>
+        <div class="col-lg-3 col-xl-4">
+          <form class="headerSearch align-items-center search">
+            <button class="headerSearchClose d-block d-lg-none" type="button">
+              <img src="img/icons/search-close.svg" alt="close">
+            </button>
+            <input class="searchInput" type="text" placeholder="Поиск">
+            <button class="searchBtn">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div><!-- /headerBottom -->
+  </div>
+</header>
+		<section class="sect pb-2 pt-2">
+  <div class="container">
+    <div class="breadcrumbs mb-2">
+      <ul class="overflowText">
+        <li>
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Новости
+          </a>
+        </li>
+        <li>
+          <span>
+            Юбилей думы Иркутска: 30 лет командной работы в интересах города
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+		<main class="main">					
+			<section class="sect pb-4">
+  <div class="container">
+    <div class="pageHead pb-2">
+      <div class="h1 mb-3">Газеты</div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <div class="docCard docCard--lg box-shadow h-100">
+  <a class="docCardImgLink" href="#">
+    <img src="img/admin/gazeta/image-3.png" alt="image" class="docCardImg w-100">
+  </a>
+  <div class="docCardContent d-flex align-items-center">
+    <div class="d-block position-relative z-1 w-100">
+      <div class="docCardTitle mb-3">Газета «Иркутск»</div>
+      <div class="d-flex flex-column flex-sm-row gap-2">
+        <a href="#" class="button button--lg button--gap button--blue fw-semibold">
+          Новый выпуск
+          <img src="img/icons/fire.svg" alt="fire">
+        </a>
+        <a href="#" class="button button--lg button--main-color button--gap fw-semibold">
+          Архив
+          <img src="img/icons/cart.svg" alt="fire">
+        </a>
+      </div>
+    </div>
+    <img class="docCardImgB" src="img/admin/gazeta/image-1.png" alt="image">
+  </div>
+
+</div>
+      </div>
+      <div class="col-lg-6">
+        <div class="docCard docCard--lg box-shadow h-100">
+  <a class="docCardImgLink" href="#">
+    <img src="img/admin/gazeta/image-4.png" alt="image" class="docCardImg w-100">
+  </a> 
+  <div class="docCardContent d-flex align-items-center">
+    <div class="d-block position-relative z-1 w-100">
+      <div class="docCardTitle mb-3">Газета «Иркутск Официальный»</div>
+      <div class="d-flex flex-column flex-sm-row gap-2">
+        <a href="#" class="button button--lg button--gap button--blue fw-semibold">
+          Новый выпуск
+          <img src="img/icons/fire.svg" alt="fire">
+        </a>
+        <a href="#" class="button button--lg button--main-color button--gap fw-semibold">
+          Архив
+          <img src="img/icons/cart.svg" alt="fire">
+        </a>
+      </div>
+    </div>
+    <img class="docCardImgB" src="img/admin/gazeta/image-2.png" alt="image">
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <h2 class="h2 mb-3">Где взять наши газеты</h2>
+
+
+    <div class="tabs" data-tabs="popup">
+      <div class="d-flex flex-column flex-xl-row justify-content-between align-items-start align-items-xl-end mb-3 gap-3">
+        <p class="mapDescr">
+          Газета “Иркутск” распространяется тиражом в 38 тысяч экземпляров. Вы можете получить газету практически в
+          любом районе города. Ниже мы предоставляем реестр распространения с точными адресами.
+        </p>
+        <ul class="tabs__nav">
+          <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">На карте</button></li>
+          <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Списком</button></li>
+        </ul>
+      </div>
+
+      <div class="tabs__content">
+        <div class="tabs__panel">
+          <iframe class="map"
+            src="https://yandex.by/map-widget/v1/?ll=104.304686%2C52.298815&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzExNzkzMxIc0KDQvtGB0YHQuNGPLCDQmNGA0LrRg9GC0YHQuiIKDayP0EIViihRQg%2C%2C&z=13.71"
+            height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+          </iframe>
+        </div>
+        <div class="tabs__panel">
+          <iframe class="map"
+            src="https://yandex.by/map-widget/v1/?ll=104.419860%2C52.271980&mode=poi&poi%5Bpoint%5D=104.391644%2C52.278231&poi%5Buri%5D=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzExNzkyORJO0KDQvtGB0YHQuNGPLCDQmNGA0LrRg9GC0YHQutC40Lkg0YDQsNC50L7QvSwg0L_QvtGB0ZHQu9C-0Log0JTQt9C10YDQttC40L3RgdC6IgoNh8jQQhXqHFFC&z=13.11"
+            width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footerW">
+      <div class="footerTop">
+        <nav class="headerNav">
+          <ul class="headerNavList d-flex flex-wrap fw-medium px-0">
+            <li>
+              <a href="#">
+                Культура
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Наука
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Общество
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Политика
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Происшествия
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Спорт
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Технологии
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Экономика
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Спецпроекты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- /footerTop -->
+      <div class="footerBottom">
+
+        <div class="row align-items-center">
+          <div class="col-sm-8">
+            <div class="headerContacts d-flex">
+              <div class="item d-flex gap-1">
+                <span>Телефон редакции:</span>
+                <a class="phone fw-semibold" href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-1">
+                  <span>Электронная почта редакции:</span>
+                  <a class="mail text--blue-2" href="mailto:site@mauirk.ru">site@mauirk.ru</a>
+                </div>
+              </div>
+              <div class="item socials">
+                <ul class="socialsList">
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-1.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-2.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-3.svg" alt="icon">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="headerTopRight d-flex align-items-start align-items-sm-end align-items-xl-center justify-content-end">
+              <ul class="d-flex flex-column flex-sm-row text--blue-2">
+                <li>
+                  <a href="#">
+                    Редакция
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Реклама
+                  </a>
+                </li>
+              </ul>
+              <button class="button button--blue-2 button--rounded">Сообщить новость</button>
+            </div>
+          </div>
+        </div>
+      </div><!-- /footerbottom -->
+    </div>
+  </div>
+</footer>
+
+<div class="overlay"></div>
+		<!-- modal -->
+<!-- person -->
+
+<div class="modal box-shadow" id="modal-person">
+
+  <div class="modalHead">
+    <div class="d-flex align-items-center gap-3">
+      <img src="img/admin/person/image-1.jpg" alt="image" class="modalPersonImg">
+      <div class="h4 modalPersonName">Верхозин
+        Евгений Анатольевич </div>
+    </div>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr">
+      тренер тренажёрного зала, персональный тренер, реабилитолог. Массажист. Специалист по мягкому фитнесу. Фитнес клуб
+      Matrix.
+    </p>
+
+    <div class="d-flex align-items-center justify-content-start justify-content-md-between flex-wrap gap-3">
+      <div class="d-flex gap-3 align-items-center">
+        <button class="button button--red">Голосовать</button>
+        <div class="d-flex gap-2">
+          <span class="fw-semibold"> 16</span>
+          <div class="modalPersonActionBtn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#like-up"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <button class="d-flex align-items-center gap-2 modalShareBtn">
+        <span class="fw-semibold d-none d-md-block">Поделиться ссылкой</span>
+        <img src="img/icons/share.svg" alt="share">
+      </button>
+    </div>
+
+  </div>
+</div>
+	</div>
+	
+	<script src="js/app.min.js"></script>
+	
+</body>
+
+</html>
+
+
+
+

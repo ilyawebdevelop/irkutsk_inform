@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Новость</title>
+</head>
+
+<body>
+	
+	<div class="wrapper">	
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="headerTop d-none d-md-block">
+      <div class="row align-items-center">
+        <div class="col-md-8 col-lg-6 col-xl-8">
+          <div class="headerContacts d-flex">
+            <div class="item d-flex gap-1">
+              <span>Телефон редакции:</span>
+              <a class="phone fw-semibold" href="tel:+73952261236">+7 (3952) 26-12-36</a>
+            </div>
+            <div class="item d-none d-xl-block">
+              <div class="d-flex gap-1">
+                <span>Электронная почта редакции:</span>
+                <a class="mail text--blue-2" href="mailto:site@mauirk.ru">site@mauirk.ru</a>
+              </div>
+            </div>
+            <div class="item socials">
+              <ul class="socialsList">
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-1.svg" alt="icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-2.svg" alt="icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-3.svg" alt="icon">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-6 col-xl-4">
+          <div class="headerTopRight d-flex align-items-center justify-content-end">
+            <ul class="d-none d-lg-flex text--blue-2">
+              <li>
+                <a href="#">
+                  Редакция
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Реклама
+                </a>
+              </li>
+            </ul>
+            <button class="button headerBtn button--blue-2">Сообщить новость</button>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- /headerTop -->
+    <div class="headerBottom">
+      <div class="row">
+        <div class="col-lg-9 col-xl-8">
+          <div class="d-flex align-items-center headerBottomLeft">
+            <a href="/" class="logo headerLogo">
+              <img src="img/admin/header/logo.png" alt="logo">
+            </a>
+            <nav class="headerNav">
+              <ul
+                class="headerNavList align-items-center align-items-lg-start flex-column flex-lg-row d-flex fw-medium">
+                <li>
+                  <a href="#">
+                    Новости
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Газеты
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Правовой портал
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Подкасты
+                  </a>
+                </li>
+              </ul>
+              <div class="d-flex d-lg-none item align-items-center flex-column gap-1 mb-3 text--sm">
+                <span>Телефон редакции:</span>
+                <a class="phone fw-semibold" href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              </div>
+              <div class="d-flex d-lg-none item flex-column gap-1 text--sm">
+                <div class="d-flex flex-column align-items-center gap-1">
+                  <span>Электронная почта редакции:</span>
+                  <a class="mail text--blue-2" href="mailto:site@mauirk.ru">site@mauirk.ru</a>
+                </div>
+              </div>
+              <div class="item socials mt-3 d-block d-lg-none">
+                <ul class="socialsList justify-content-center">
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-1.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-2.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-3.svg" alt="icon">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="d-flex flex-column align-items-center d-lg-none mt-3 text--blue-2">
+                <li>
+                  <a href="#">
+                    Редакция
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Реклама
+                  </a>
+                </li>
+              </ul>
+              <button class="button headerBtn d-flex d-lg-none button--blue-2 mx-auto mt-3">Сообщить новость</button>
+              <div class="headerNavCloseBtn d-block d-lg-none">
+                <img src="img/icons/btn-close.svg" alt="icon">
+              </div>
+            </nav>
+            <button class="headerSearchBtn">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#search"></use>
+              </svg>
+            </button>
+            <div class="hamburger" id="toggle">
+              <div class="top-bun"></div>
+              <div class="meat"></div>
+              <div class="bottom-bun"></div>
+            </div><!-- /Hamburger Menu -->
+          </div>
+        </div>
+        <div class="col-lg-3 col-xl-4">
+          <form class="headerSearch align-items-center search">
+            <button class="headerSearchClose d-block d-lg-none" type="button">
+              <img src="img/icons/search-close.svg" alt="close">
+            </button>
+            <input class="searchInput" type="text" placeholder="Поиск">
+            <button class="searchBtn">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div><!-- /headerBottom -->
+  </div>
+</header>
+		<main class="main">		
+			<section class="sect pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="breadcrumbs mb-2">
+          <ul class="overflowText">
+            <li>
+              <a href="#">
+                Главная
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Новости
+              </a>
+            </li>
+            <li>
+              <span>
+                Юбилей думы Иркутска: 30 лет командной работы в интересах города
+              </span>
+            </li>
+          </ul>
+        </div><!-- /breadcrumbs -->
+        <div class="pageHead py-2">
+          <div class="h1">Юбилей думы Иркутска: 30 лет командной работы в интересах города</div>
+        </div>
+        <div class="d-flex gap-3 py-2 text--sm">
+          <a href="#" class="articleCardCat fw-semibold icon--blue-2">Общество</a>
+          <div class="articleCardDate">26 марта 2024</div>
+        </div>
+
+        <div class="content">
+
+          <figure>
+            <a data-fancybox class="" href="img/admin/content/image-1.jpg">
+              <img src="img/admin/content/image-1.jpg" alt="image">
+            </a>
+            <figcaption>Фото Валентина Карпова и из архива Веры Николаевны Афанасьевой</figcaption>
+          </figure>
+
+          <p>
+            На этой неделе дума Иркутска отметила свой юбилей: 27 марта 1994 года состоялись первые в постсоветской
+            России выборы наших муниципальных депутатов. В минувшую среду в актовом зале мэрии на торжественном
+            мероприятии, посвященном юбилейной дате, собрались депутаты всех семи созывов Иркутской думы. Поздравить их
+            пришли представители регионального правительства, областного Законодательного Собрания, городской
+            администрации, консульств Монголии, Китая, Республики Корея, общественники, религиозные деятели.
+          </p>
+
+          <p>
+            От истоков парламентаризма к дню сегодняшнему, от первого рабочего дня и до 30-летнего юбилея: этот путь
+            думы Иркутска наглядно продемонстрировал документальный фильм, с которого началось торжественное
+            мероприятие. Председатели Иркутской думы разных лет Андрей Лабыгин, Александр Ханхалаев, Евгений Стекачев
+            обозначили в нем основные вехи.
+          </p>
+
+          <div class="contentSliderW d-none d-lg-flex">
+            <button class="navArrow navArrowPrev">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+              </svg>
+            </button>
+            <div class="swiper contentSlider">
+              <div class="swiper-wrapper">
+
+                <a href="img/admin/content/image-1.jpg" data-fancybox="gallery" class="swiper-slide contentSlide">
+                  <img src="img/admin/content/image-1.jpg" alt="image">
+                </a><!-- /contentSlide -->
+
+                <a href="img/admin/article/image-3.jpg" data-fancybox="gallery" class="swiper-slide contentSlide">
+                  <img src="img/admin/article/image-3.jpg" alt="image">
+                </a><!-- /contentSlide -->
+
+                <a href="img/admin/content/image-1.jpg" data-fancybox="gallery" class="swiper-slide contentSlide">
+                  <img src="img/admin/content/image-1.jpg" alt="image">
+                </a><!-- /contentSlide -->
+
+                <a href="img/admin/article/image-3.jpg" data-fancybox="gallery" class="swiper-slide contentSlide">
+                  <img src="img/admin/article/image-3.jpg" alt="image">
+                </a><!-- /contentSlide -->
+
+              </div>
+            </div>
+            <button class="navArrow navArrowNext">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+              </svg>
+            </button>
+          </div><!-- /contentSliderW -->
+
+          <p>
+            Волонтерами могут быть:
+          </p>
+
+          <ul>
+            <li>
+              все желающие старше 16 лет;
+            </li>
+            <li>
+              фотографы и видеооператоры;
+            </li>
+            <li>
+              люди, имеющие опыт работы в добровольчестве или обладающие организаторскими способностями.
+            </li>
+          </ul>
+
+          <img class="mx-auto mt-3 d-none d-lg-block" src="img/admin/content/year.png" alt="image">
+          <p class="mt-3">
+            На этой неделе дума Иркутска отметила свой юбилей: 27 марта 1994 года состоялись первые в постсоветской
+            России выборы наших муниципальных депутатов. В минувшую среду в актовом зале мэрии на торжественном
+            мероприятии, посвященном юбилейной дате, собрались депутаты всех семи созывов Иркутской думы. Поздравить их
+            пришли представители регионального правительства, областного Законодательного Собрания, городской
+            администрации, консульств Монголии, Китая, Республики Корея, общественники, религиозные деятели.
+          </p>
+          <p class="mb-4">
+            От истоков парламентаризма к дню сегодняшнему, от первого рабочего дня и до 30-летнего юбилея: этот путь
+            думы Иркутска наглядно продемонстрировал документальный фильм, с которого началось торжественное
+            мероприятие. Председатели Иркутской думы разных лет Андрей Лабыгин, Александр Ханхалаев, Евгений Стекачев
+            обозначили в нем основные вехи.
+          </p>
+
+          <div class="contentQuote my-5 d-none d-lg-block">
+            <p class="text--lg">«Многие жители и гости Иркутска обратили внимание, что рядом с терминалом внутренних
+              линий аэропорта
+              сейчас идет масштабная стройка. Мы возводим временный терминал прилета. Это будет одноэтажный модульный
+              пассажирский павильон сборно-разборного типа. В здании площадью 2,6 тыс. квадратных метров предусмотрены
+              зона прилёта и выдачи багажа, зона ожидания для трансфертных пассажиров и зона встречающих. Стоимость
+              работ составляет 585 млн рублей. Сейчас идёт монтаж основания здания»</p>
+            <p>написал Кобзев в Telegram-канале</p>
+          </div>
+
+          <p>
+            На этой неделе дума Иркутска отметила свой юбилей: 27 марта 1994 года состоялись первые в постсоветской
+            России выборы наших муниципальных депутатов. В минувшую среду в актовом зале мэрии на торжественном
+            мероприятии, посвященном юбилейной дате, собрались депутаты всех семи созывов Иркутской думы. Поздравить их
+            пришли представители регионального правительства, областного Законодательного Собрания, городской
+            администрации, консульств Монголии, Китая, Республики Корея, общественники, религиозные деятели.
+          </p>
+          <p>
+            От истоков парламентаризма к дню сегодняшнему, от первого рабочего дня и до 30-летнего юбилея: этот путь
+            думы Иркутска наглядно продемонстрировал документальный фильм, с которого началось торжественное
+            мероприятие. Председатели Иркутской думы разных лет Андрей Лабыгин, Александр Ханхалаев, Евгений Стекачев
+            обозначили в нем основные вехи.
+          </p>
+
+          <div class="flex-column-reverse d-flex align-items-start flex-sm-row fd-flex align-items-sm-center justify-content-between flex-wrap mt-4 mb-5">
+            <div class="d-flex align-items-center gap-3">
+
+              <span class="text--sm">Поделиться в соцсетях:</span>
+              <div class="socials">
+                <ul class="socialsList">
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-1.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-2.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-3.svg" alt="icon">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="text--sm fw-semibold">
+              Алексей Буренин
+            </div>
+          </div>
+
+          <h2 class="h2 mb-4">Связанные новости</h2>
+
+          <div class="articleCard articleCard--horizontal box-shadow overflow-hidden mb-3">
+  <div class="row">
+    <div class="col-4">
+      <a href="#" class="articleCardImg">
+        <img src="img/admin/article/image-5.jpg" alt="image">
+      </a>
+    </div>
+    <div class="col-8">
+      <div class="articleCardContent">
+        <a href="#" class="articleCardTitle h3">
+          Выплату контрактникам, участвующим в СВО, увеличили в Приангарье до 400 тысяч рублей
+        </a>
+        <div class="d-flex gap-2 gap-lg-3 text--sm flex-wrap">
+          <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+          <div class="articleCardDate text--sm">26 марта 2024</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="articleCard articleCard--horizontal box-shadow overflow-hidden mb-3">
+  <div class="row">
+    <div class="col-4">
+      <a href="#" class="articleCardImg">
+        <img src="img/admin/article/image-6.jpg" alt="image">
+      </a>
+    </div>
+    <div class="col-8">
+      <div class="articleCardContent">
+        <a href="#" class="articleCardTitle h3">
+          Благоустройство Иерусалимской горы продолжится в этом году в Иркутске
+        </a>
+        <div class="d-flex gap-2 gap-lg-3 text--sm flex-wrap">
+          <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+          <div class="articleCardDate text--sm">26 марта 2024</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="articleCard articleCard--horizontal box-shadow overflow-hidden mb-3">
+  <div class="row">
+    <div class="col-4">
+      <a href="#" class="articleCardImg">
+        <img src="img/admin/article/image-7.jpg" alt="image">
+      </a>
+    </div>
+    <div class="col-8">
+      <div class="articleCardContent">
+        <a href="#" class="articleCardTitle h3">
+          Электронный проездной билет на общественный транспорт можно приобрести в Иркутске
+        </a>
+        <div class="d-flex gap-2 gap-lg-3 text--sm flex-wrap">
+          <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+          <div class="articleCardDate text--sm">26 марта 2024</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          <h2 class="h2 mb-4 mt-5">Похожие новости</h2>
+
+          <div class="articleCard articleCard--horizontal box-shadow overflow-hidden mb-3">
+  <div class="row">
+    <div class="col-4">
+      <a href="#" class="articleCardImg">
+        <img src="img/admin/article/image-5.jpg" alt="image">
+      </a>
+    </div>
+    <div class="col-8">
+      <div class="articleCardContent">
+        <a href="#" class="articleCardTitle h3">
+          Выплату контрактникам, участвующим в СВО, увеличили в Приангарье до 400 тысяч рублей
+        </a>
+        <div class="d-flex gap-2 gap-lg-3 text--sm flex-wrap">
+          <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+          <div class="articleCardDate text--sm">26 марта 2024</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="articleCard articleCard--horizontal box-shadow overflow-hidden mb-3">
+  <div class="row">
+    <div class="col-4">
+      <a href="#" class="articleCardImg">
+        <img src="img/admin/article/image-6.jpg" alt="image">
+      </a>
+    </div>
+    <div class="col-8">
+      <div class="articleCardContent">
+        <a href="#" class="articleCardTitle h3">
+          Благоустройство Иерусалимской горы продолжится в этом году в Иркутске
+        </a>
+        <div class="d-flex gap-2 gap-lg-3 text--sm flex-wrap">
+          <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+          <div class="articleCardDate text--sm">26 марта 2024</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="articleCard articleCard--horizontal box-shadow overflow-hidden mb-3">
+  <div class="row">
+    <div class="col-4">
+      <a href="#" class="articleCardImg">
+        <img src="img/admin/article/image-7.jpg" alt="image">
+      </a>
+    </div>
+    <div class="col-8">
+      <div class="articleCardContent">
+        <a href="#" class="articleCardTitle h3">
+          Электронный проездной билет на общественный транспорт можно приобрести в Иркутске
+        </a>
+        <div class="d-flex gap-2 gap-lg-3 text--sm flex-wrap">
+          <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+          <div class="articleCardDate text--sm">26 марта 2024</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <a class="baner baner--horizontal border-4 overflow-hidden mb-3" href="#">
+  <img class="banerImg" src="img/admin/baner/image-4.jpg" alt="baner">
+  <div class="banerTitle">Рекламный баннер </div>  
+</a>  
+        <div class="articleCard articleCard--vertical box-shadow border-4 overflow-hidden mb-5">
+  <a href="#" class="articleCardImg">
+    <img src="img/admin/article/image-2.jpg" alt="image">
+  </a>
+  <div class="articleCardContent">
+    <a href="#" class="articleCardTitle h2">
+      В иркутских школах с 1 апреля начнется запись в первые классы
+    </a>
+    <div class="d-flex gap-3 text--sm">
+      <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+      <div class="articleCardDate text--sm">26 марта 2024</div>
+    </div>
+  </div>
+</div>
+        <div class="articleRelated">
+          <h2 class="h2 mb-3">
+            Самое читаемое
+          </h2>
+          <div class="d-flex gap-4 flex-wrap mb-4 fw-semibold">
+            <a href="#">За неделю</a>
+            <a class="text--gray" href="#">За месяц</a>
+            <a class="text--gray" href="#">За год</a>
+          </div>
+        </div>
+        <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+  <div class="d-flex">
+    <a href="#" class="articleCardImg">
+      <img class="border-4" src="img/admin/article/image-5.jpg" alt="image">
+    </a>
+    <div class="articleCardContent">
+      <a href="#" class="articleCardTitle h4 fw-semibold">
+        Выплату контрактникам, участвующим в СВО, увеличили в Приангарье до 400 тысяч рублей
+      </a>
+      <div class="d-flex gap-3 text--sm flex-wrap">
+        <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+        <div class="articleCardDate text--sm">26 марта 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+  <div class="d-flex">
+    <a href="#" class="articleCardImg">
+      <img class="border-4" src="img/admin/article/image-1.jpg" alt="image">
+    </a>
+    <div class="articleCardContent">
+      <a href="#" class="articleCardTitle h4 fw-semibold">
+        Благоустройство Иерусалимской горы продолжится в этом году в Иркутске
+      </a>
+      <div class="d-flex gap-3 text--sm flex-wrap">
+        <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+        <div class="articleCardDate text--sm">26 марта 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+  <div class="d-flex">
+    <a href="#" class="articleCardImg">
+      <img class="border-4" src="img/admin/article/image-2.jpg" alt="image">
+    </a>
+    <div class="articleCardContent">
+      <a href="#" class="articleCardTitle h4 fw-semibold">
+        Электронный проездной билет на общественный транспорт можно приобрести в Иркутске
+      </a>
+      <div class="d-flex gap-3 text--sm flex-wrap">
+        <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+        <div class="articleCardDate text--sm">26 марта 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+  <div class="d-flex">
+    <a href="#" class="articleCardImg">
+      <img class="border-4" src="img/admin/article/image-3.jpg" alt="image">
+    </a>
+    <div class="articleCardContent">
+      <a href="#" class="articleCardTitle h4 fw-semibold">
+        В Иркутске выделили автомобиль для сбора гуманитарной помощи по городу
+      </a>
+      <div class="d-flex gap-3 text--sm flex-wrap">
+        <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+        <div class="articleCardDate text--sm">26 марта 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>		
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footerW">
+      <div class="footerTop">
+        <nav class="headerNav">
+          <ul class="headerNavList d-flex flex-wrap fw-medium px-0">
+            <li>
+              <a href="#">
+                Культура
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Наука
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Общество
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Политика
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Происшествия
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Спорт
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Технологии
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Экономика
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Спецпроекты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- /footerTop -->
+      <div class="footerBottom">
+
+        <div class="row align-items-center">
+          <div class="col-sm-8">
+            <div class="headerContacts d-flex">
+              <div class="item d-flex gap-1">
+                <span>Телефон редакции:</span>
+                <a class="phone fw-semibold" href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-1">
+                  <span>Электронная почта редакции:</span>
+                  <a class="mail text--blue-2" href="mailto:site@mauirk.ru">site@mauirk.ru</a>
+                </div>
+              </div>
+              <div class="item socials">
+                <ul class="socialsList">
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-1.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-2.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-3.svg" alt="icon">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="headerTopRight d-flex align-items-start align-items-sm-end align-items-xl-center justify-content-end">
+              <ul class="d-flex flex-column flex-sm-row text--blue-2">
+                <li>
+                  <a href="#">
+                    Редакция
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Реклама
+                  </a>
+                </li>
+              </ul>
+              <button class="button button--blue-2 button--rounded">Сообщить новость</button>
+            </div>
+          </div>
+        </div>
+      </div><!-- /footerbottom -->
+    </div>
+  </div>
+</footer>
+
+<div class="overlay"></div>
+		<!-- modal -->
+<!-- person -->
+
+<div class="modal box-shadow" id="modal-person">
+
+  <div class="modalHead">
+    <div class="d-flex align-items-center gap-3">
+      <img src="img/admin/person/image-1.jpg" alt="image" class="modalPersonImg">
+      <div class="h4 modalPersonName">Верхозин
+        Евгений Анатольевич </div>
+    </div>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr">
+      тренер тренажёрного зала, персональный тренер, реабилитолог. Массажист. Специалист по мягкому фитнесу. Фитнес клуб
+      Matrix.
+    </p>
+
+    <div class="d-flex align-items-center justify-content-start justify-content-md-between flex-wrap gap-3">
+      <div class="d-flex gap-3 align-items-center">
+        <button class="button button--red">Голосовать</button>
+        <div class="d-flex gap-2">
+          <span class="fw-semibold"> 16</span>
+          <div class="modalPersonActionBtn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#like-up"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <button class="d-flex align-items-center gap-2 modalShareBtn">
+        <span class="fw-semibold d-none d-md-block">Поделиться ссылкой</span>
+        <img src="img/icons/share.svg" alt="share">
+      </button>
+    </div>
+
+  </div>
+</div>
+	</div>
+	
+	<script src="js/app.min.js"></script>
+
+
+	
+</body>
+
+</html>
+
+
+
+

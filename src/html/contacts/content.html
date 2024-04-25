@@ -1,0 +1,49 @@
+<section class="sect pb-4">
+  <div class="container">
+    <div class="pageHead pb-2">
+      <div class="h1 mb-3">Газеты</div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        @@include('../article-card/doc-card-lg.html',{})
+      </div>
+      <div class="col-lg-6">
+        @@include('../article-card/doc-card-lg-2.html',{})
+      </div>
+    </div>
+
+    <h2 class="h2 mb-3">Где взять наши газеты</h2>
+
+
+    <div class="tabs" data-tabs="popup">
+      <div class="d-flex flex-column flex-xl-row justify-content-between align-items-start align-items-xl-end mb-3 gap-3">
+        <p class="mapDescr">
+          Газета “Иркутск” распространяется тиражом в 38 тысяч экземпляров. Вы можете получить газету практически в
+          любом районе города. Ниже мы предоставляем реестр распространения с точными адресами.
+        </p>
+        <ul class="tabs__nav">
+          <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">На карте</button></li>
+          <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Списком</button></li>
+        </ul>
+      </div>
+
+      <div class="tabs__content">
+        <div class="tabs__panel">
+          <iframe class="map"
+            src="https://yandex.by/map-widget/v1/?ll=104.304686%2C52.298815&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzExNzkzMxIc0KDQvtGB0YHQuNGPLCDQmNGA0LrRg9GC0YHQuiIKDayP0EIViihRQg%2C%2C&z=13.71"
+            height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+          </iframe>
+        </div>
+        <div class="tabs__panel">
+          <iframe class="map"
+            src="https://yandex.by/map-widget/v1/?ll=104.419860%2C52.271980&mode=poi&poi%5Bpoint%5D=104.391644%2C52.278231&poi%5Buri%5D=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzExNzkyORJO0KDQvtGB0YHQuNGPLCDQmNGA0LrRg9GC0YHQutC40Lkg0YDQsNC50L7QvSwg0L_QvtGB0ZHQu9C-0Log0JTQt9C10YDQttC40L3RgdC6IgoNh8jQQhXqHFFC&z=13.11"
+            width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>

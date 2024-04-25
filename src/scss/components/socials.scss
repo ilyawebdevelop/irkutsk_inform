@@ -1,0 +1,19 @@
+.socials {
+  &List {
+    display: flex;
+    column-gap: 10px;
+
+    li {
+      a {
+        background-color: transparent;
+       
+        img {
+          transition: opacity .2s linear;
+          &:hover {
+            opacity: .9;
+          }       
+        }
+      }
+    }
+  }
+}

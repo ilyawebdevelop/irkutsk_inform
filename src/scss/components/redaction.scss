@@ -1,0 +1,39 @@
+.redactionItem {
+  display: flex;
+  margin-bottom: 20px;
+  @media(max-width: 575px){
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  &Content {
+    padding: 20px 50px 30px 20px;
+    @media(max-width: 575px){
+      padding-right: 20px;
+    }
+  }
+
+  &Img {
+    width: 200px;
+    object-fit: cover;
+    height: 200px;
+    @media(max-width: 575px){
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+    }
+  }
+  &Link {
+    color: var(--blue-2);
+  }
+  &Title {
+    @media(max-width: 767px){
+      font-size: 20px;
+      line-height: 28px;
+    }
+    @media(max-width: 575px){
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// Colors
+$main-color: #404040;
+
+// Fonts
+$font-family: 'Montserrat', sans-serif;
+
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+ // Containers
+:root { 
+  --content-width: 1820px;
+  --content-fluid-width: 1700px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --shadow: box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  --black: #404040;
+  --gray: #ADADAD;
+  --gray-light: #F5F5F5;
+  --blue: #4E65A0;
+  --blue-2: #3A63CC;
+  --background: #fff;
+  --success: #27c340;
+  --red: #DC421D; 
+}

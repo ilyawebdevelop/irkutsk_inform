@@ -1,0 +1,169 @@
+// Header
+.header {
+  &Search {
+    @media(max-width: 991px) {
+      display: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+    &.active {
+      display: flex;
+    }
+  }
+
+  &Top {
+    padding-bottom: 16px;
+    padding-top: 16px;
+
+    @media(max-width: 991px) {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+
+    &Right {
+      column-gap: 30px;
+      font-size: 13px;
+      line-height: 185%;
+
+      ul {
+        column-gap: 30px;
+
+        li {
+          a {
+            transition: color .2s linear;
+
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+
+      .button {
+        font-size: 13px;
+        line-height: 185%;
+      }
+    }
+  }
+
+  &Bottom {
+    padding-top: 4px;
+    padding-bottom: 16px;
+    @media(max-width: 991px){
+      position: relative;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    @media(max-width: 767px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &Left {
+      column-gap: 40px;
+
+      @media(max-width: 1400px) {
+        column-gap: 20px;
+      }
+
+      @media(max-width: 991px) {
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &Contacts {
+    column-gap: 30px;
+    font-size: 13px;
+    line-height: 185%;
+  }
+
+  &Logo {
+    img {
+      max-width: 280px;
+
+      @media(max-width: 575px) {
+        max-width: 185px;
+      }
+    }
+  }
+
+  .headerNav {
+    @media(max-width: 991px) {
+      display: none;
+      position: fixed;
+      top: 0px;
+      left: 0;
+      width: 300px;
+      background-color: #fff;
+      height: calc(100%);
+      z-index: 5;
+      padding-top: 70px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media(max-width: 350px) {
+      width: 270px;
+    }
+  }
+.headerNavList {
+  @media(max-width: 991px){
+    margin-bottom: 20px;
+  }
+}
+  &Nav {
+
+    &.active {
+      display: block;
+      -webkit-animation: shows 0.5s;
+      animation: shows 0.5s;
+    }
+
+    &List {
+      column-gap: 30px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @media(max-width: 1199px) {
+        column-gap: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        row-gap: 10px;
+      }
+
+      li {
+        a {
+          transition: color .2s linear;
+
+          &:hover {
+            color: var(--blue-2);
+          }
+        }
+      }
+    }
+  }
+
+  .phone {
+    transition: color .2s linear;
+
+    &:hover {
+      color: var(--blue-2);
+    }
+  }
+
+  .mail {
+    transition: color .2s linear;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+.headerNavCloseBtn {
+  position: absolute;
+  top: 29px;
+  right: 20px;
+}

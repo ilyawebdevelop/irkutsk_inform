@@ -1,0 +1,104 @@
+// modal
+.modal {
+  display: none;
+
+
+  &Head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &Descr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &Content {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  .f-button {
+    position: unset;
+    background-color: transparent;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+.fancybox__content {
+  color: #000;
+}
+
+#modal-person {
+  padding: 30px 40px 30px 30px;
+  border-radius: 0;
+  width: 650px;
+  height: fit-content;
+
+  @media(max-width: 575px) {
+    padding: 2.6rem;
+  }
+
+  .productCard {
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+
+    @media(max-width: 490px) {
+      max-width: 100%;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.modalPersonName {
+  max-width: 215px;
+}
+
+.modalPersonImg {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.modalPersonActionBtn {
+  position: relative;
+  bottom: 2px;
+
+  // &:hover {   
+  //   svg {
+  //     fill: #404040;
+  //   }
+  // }
+  svg {
+    stroke: #404040;
+    fill: transparent;
+    width: 17px;
+    height: 17px;
+    stroke-width: 2px;
+  }
+}
+
+.modalShareBtn {
+ 
+  &:hover {
+    span {
+      border-color: #404040;
+    }    
+  }
+
+  span {
+    border-bottom: 2px solid transparent;
+    transition: border-color .2s linear;
+  }
+}

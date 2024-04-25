@@ -1,0 +1,44 @@
+// Footer
+.footer {
+  &W {
+    border-top: 1px solid var(--gray);
+    padding-top: 40px;   
+  }
+  &Bottom {
+    padding-bottom: 16px;
+    padding-top: 16px;
+    @media(max-width: 575px){
+      padding-bottom: 40px;
+    }
+  }
+  .headerNav{
+    display: block;
+    &List {
+      @media(max-width: 575px){
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+  }
+  .headerContacts {
+    @media(max-width: 1199px){
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    @media(max-width: 575px){
+      margin-bottom: 20px;
+    }
+  }
+  .headerTopRight {
+    @media(max-width: 1199px){
+      flex-direction: column;
+      align-items: flex-end;
+      row-gap: 20px;
+    }
+  }
+  .headerTopRight ul {
+    @media(max-width: 575px){
+      row-gap: 20px;
+    }
+  }
+}

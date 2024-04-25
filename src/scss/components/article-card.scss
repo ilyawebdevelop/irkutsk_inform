@@ -1,0 +1,520 @@
+.articleCard {
+  &--horizontal {
+    border-radius: 0px 4px 4px 0px;
+
+    .articleCardContent {
+      padding-left: 0;
+      padding-bottom: 20px;
+
+      @media(max-width: 767px) {
+        padding-top: 0;
+      }
+    }
+
+    .articleCardImg {
+      img {
+        @media(max-width: 767px) {
+          height: 25vw;
+          border-radius: 4px;
+        }
+
+        @media(max-width: 575px) {
+          height: 25vw;
+        }
+      }
+    }
+  }
+
+  &--gradient {
+    position: relative;
+
+    &:hover {
+      &:before {
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.3);
+      transition: background .2s linear;
+    }
+  }
+
+  &--sm {
+    .articleCardImg img {
+      min-width: 120px;
+      width: 120px;
+      height: 120px;
+    }
+
+    .articleCardContent {
+      padding-top: 0;
+      padding-left: 20px;
+    }
+  }
+
+  &--image {
+    // padding: 30px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    .articleCardTitle {
+      position: unset;
+      margin-bottom: 0;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .articleCardContent {
+      z-index: 1;
+
+      @media(max-width: 991px) {
+        padding: 20px;
+      }
+    }
+  }
+
+  &--spec {
+    .articleCardImg {
+      img {
+        @media(max-width: 575px) {
+          height: 150px;
+        }
+      }
+    }
+  }
+
+  &Content {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+
+    @media(max-width: 1199px) {
+      padding: 20px;
+    }
+
+    @media(max-width: 991px) {
+      padding-top: 16px;
+      padding-left: 0;
+      padding-right: 20px;
+      padding-bottom: 0;
+    }
+  }
+
+  &Title {
+    margin-bottom: 20px;
+    transition: color .2s linear;
+    position: relative;
+    z-index: 1;
+
+    @media(max-width: 991px) {
+      margin-bottom: 16px;
+    }
+
+    &:hover {
+      color: var(--blue-2);
+    }
+  }
+
+  &Img {
+    transition: opacity .2s linear;
+
+    img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+
+  &Cat {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+
+    @media(max-width: 575px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    &.icon--blue-2 {
+      &::before {
+        background-color: var(--blue-2);
+      }
+    }
+
+    &.icon--blue {
+      &::before {
+        background-color: var(--blue);
+      }
+    }
+
+    &.icon--error {
+      &::before {
+        background-color: var(--red);
+      }
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+
+    }
+  }
+
+  &--lg {
+    .articleCardContent {
+      padding-bottom: 25px;
+
+      @media(max-width: 991px) {
+        padding-bottom: 0;
+      }
+    }
+
+    .articleCardImg {
+
+      img {
+        height: 420px;
+        width: 100%;
+        object-fit: cover;
+
+        @media(max-width: 1400px) {
+          height: 360px;
+        }
+
+        @media(max-width: 991px) {
+          height: 320px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  &--vertical {
+    .articleCardImg {
+      img {
+        @media(max-width: 991px) {
+          border-radius: 4px;
+        }
+
+        @media(max-width: 575px) {
+          height: 55vw;
+        }
+      }
+    }
+  }
+
+  .cardText {
+    position: relative;
+    z-index: 1;
+  }
+
+  &.box-shadow {
+    @media(max-width: 991px) {
+      box-shadow: none;
+    }
+  }
+
+  &--gazeta {
+    @media(max-width: 575px) {
+      position: relative;
+    }
+
+    .articleCardContent {
+      @media(max-width: 767px) {
+        padding: 20px;
+        padding-bottom: 40px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    &.box-shadow {
+      @media(max-width: 767px) {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+      }
+    }
+
+    .articleCardImg img {
+      @media(max-width: 575px) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 277px;
+      }
+    }
+  }
+
+  &--event {
+    .articleCardTitle {
+      margin-bottom: 0;
+    }
+
+    &.box-shadow {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .articleCardContent {
+      @media(max-width: 991px) {
+        padding: 20px 30px 30px;
+      }
+    }
+  }
+}
+
+.podcastCard {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background: url('@img/podcast/podcast-logo.svg') no-repeat center center / contain;
+    bottom: 0;
+    right: 0;
+
+    @media(max-width: 767px) {
+      height: 205px;
+      width: 139px;
+    }
+  }
+
+  .articleCardContent {
+    padding: 20px;
+  }
+}
+
+.podcastCardPlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color .2s linear;
+
+  @media(max-width: 767px) {
+    right: unset;
+    position: unset;
+    transform: none;
+  }
+}
+
+.pravoCard {
+  position: relative;
+  min-height: 200px;
+
+  &:hover {
+    opacity: .9;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url('@img/icons/pravo.svg') no-repeat center center / contain;
+    bottom: 0;
+    right: 0;
+
+    @media(max-width: 767px) {
+      background: url('@img/icons/pravo-sm.svg') no-repeat center center / contain;
+      width: 135px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 190px;
+    height: 111px;
+    background: url('@img/pravo/rus.png') no-repeat center center / contain;
+    bottom: 0;
+    left: 0;
+  }
+
+  .articleCardContent {
+    position: relative;
+    z-index: 1;
+
+    @media(max-width: 991px) {
+      padding: 20px;
+    }
+  }
+}
+
+.docCard {
+  &--lg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .docCardImg {
+      height: 210px;
+      margin-bottom: 28px;
+      position: relative;
+      z-index: 1;
+
+      @media(max-width: 991px) {
+        height: auto;
+        margin-bottom: 0;
+      }
+    }
+    .button {
+      @media(max-width: 575px){
+        width: 100%;
+      }
+    }
+
+    .docCardTitle {
+      font-size: 32px;
+      line-height: 44px;
+      font-weight: 600;
+      max-width: 300px;
+
+      @media(max-width: 991px) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+
+    .docCardContent {
+      padding-right: 0;
+      padding-left: 30px;
+      padding-bottom: 30px;
+
+      @media(max-width: 991px) {
+        padding-right: 30px;
+      }    
+    }
+
+    .docCardImgB {
+      width: 280px;
+      margin-left: auto;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &Content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &Img {
+    height: 200px;
+    object-fit: contain;
+    @media(max-width: 575px){
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &Link {
+      transition: opacity .2s linear;
+
+      &:hover {
+        opacity: .9;
+      }
+    }
+  }
+}
+
+.portalCard {
+  padding: 30px;
+  position: relative;
+
+  a.h3 {
+    transition: color .2s linear;
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 8px;
+    background-color: var(--blue-2);
+  }
+}
+
+.eventCard {
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(360deg, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+    transform: rotate(180deg);
+  }
+}
+
+.eventCardAction {
+  position: relative;
+  z-index: 1;
+
+  span {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 2px;
+  }
+}
+
+.eventList {
+  .col-lg-6 {
+    max-height: 420px;
+
+    &>a {
+      height: 100%;
+    }
+  }
+}

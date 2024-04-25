@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Редакция</title>
+</head>
+
+<body>
+	
+	<div class="wrapper">	
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="headerTop d-none d-md-block">
+      <div class="row align-items-center">
+        <div class="col-md-8 col-lg-6 col-xl-8">
+          <div class="headerContacts d-flex">
+            <div class="item d-flex gap-1">
+              <span>Телефон редакции:</span>
+              <a class="phone fw-semibold" href="tel:+73952261236">+7 (3952) 26-12-36</a>
+            </div>
+            <div class="item d-none d-xl-block">
+              <div class="d-flex gap-1">
+                <span>Электронная почта редакции:</span>
+                <a class="mail text--blue-2" href="mailto:site@mauirk.ru">site@mauirk.ru</a>
+              </div>
+            </div>
+            <div class="item socials">
+              <ul class="socialsList">
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-1.svg" alt="icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-2.svg" alt="icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-3.svg" alt="icon">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-6 col-xl-4">
+          <div class="headerTopRight d-flex align-items-center justify-content-end">
+            <ul class="d-none d-lg-flex text--blue-2">
+              <li>
+                <a href="#">
+                  Редакция
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Реклама
+                </a>
+              </li>
+            </ul>
+            <button class="button headerBtn button--blue-2">Сообщить новость</button>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- /headerTop -->
+    <div class="headerBottom">
+      <div class="row">
+        <div class="col-lg-9 col-xl-8">
+          <div class="d-flex align-items-center headerBottomLeft">
+            <a href="/" class="logo headerLogo">
+              <img src="img/admin/header/logo.png" alt="logo">
+            </a>
+            <nav class="headerNav">
+              <ul
+                class="headerNavList align-items-center align-items-lg-start flex-column flex-lg-row d-flex fw-medium">
+                <li>
+                  <a href="#">
+                    Новости
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Газеты
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Правовой портал
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Подкасты
+                  </a>
+                </li>
+              </ul>
+              <div class="d-flex d-lg-none item align-items-center flex-column gap-1 mb-3 text--sm">
+                <span>Телефон редакции:</span>
+                <a class="phone fw-semibold" href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              </div>
+              <div class="d-flex d-lg-none item flex-column gap-1 text--sm">
+                <div class="d-flex flex-column align-items-center gap-1">
+                  <span>Электронная почта редакции:</span>
+                  <a class="mail text--blue-2" href="mailto:site@mauirk.ru">site@mauirk.ru</a>
+                </div>
+              </div>
+              <div class="item socials mt-3 d-block d-lg-none">
+                <ul class="socialsList justify-content-center">
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-1.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-2.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-3.svg" alt="icon">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="d-flex flex-column align-items-center d-lg-none mt-3 text--blue-2">
+                <li>
+                  <a href="#">
+                    Редакция
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Реклама
+                  </a>
+                </li>
+              </ul>
+              <button class="button headerBtn d-flex d-lg-none button--blue-2 mx-auto mt-3">Сообщить новость</button>
+              <div class="headerNavCloseBtn d-block d-lg-none">
+                <img src="img/icons/btn-close.svg" alt="icon">
+              </div>
+            </nav>
+            <button class="headerSearchBtn">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#search"></use>
+              </svg>
+            </button>
+            <div class="hamburger" id="toggle">
+              <div class="top-bun"></div>
+              <div class="meat"></div>
+              <div class="bottom-bun"></div>
+            </div><!-- /Hamburger Menu -->
+          </div>
+        </div>
+        <div class="col-lg-3 col-xl-4">
+          <form class="headerSearch align-items-center search">
+            <button class="headerSearchClose d-block d-lg-none" type="button">
+              <img src="img/icons/search-close.svg" alt="close">
+            </button>
+            <input class="searchInput" type="text" placeholder="Поиск">
+            <button class="searchBtn">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div><!-- /headerBottom -->
+  </div>
+</header>
+		<section class="sect pb-2 pt-2">
+  <div class="container">
+    <div class="breadcrumbs mb-2">
+      <ul class="overflowText">
+        <li>
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Новости
+          </a>
+        </li>
+        <li>
+          <span>
+            Юбилей думы Иркутска: 30 лет командной работы в интересах города
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+		<main class="main">			
+			<section class="sect redaction pb-4">
+  <div class="container">
+    <div class="pageHead py-2 mb-3">
+      <h1 class="h1">
+        Редакция
+      </h1>
+    </div>
+    <div class="h2 py-2 mb-3">Газета "Иркутск"</div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="redactionItem box-shadow border-4 overflow-hidden">
+          <img src="img/admin/redaction/image-1.jpg" alt="image" class="redactionItemImg">
+          <div class="redactionItemContent">
+            <h3 class="redactionItemTitle h3 mb-2 mb-lg-0">Алена Анатольевна Огнева</h3>
+            <p class="text-center text-sm-start">Главный редактор газеты «Иркутск»</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap justify-content-center justify-content-sm-start">
+              <a href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              <a class="redactionItemLink" href="mailto:ogneva@inbox.ru">ogneva@inbox.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="redactionItem box-shadow border-4 overflow-hidden">
+          <img src="img/admin/redaction/image-2.jpg" alt="image" class="redactionItemImg">
+          <div class="redactionItemContent">
+            <h3 class="redactionItemTitle h3 mb-2 mb-lg-0">Марина Александровна Слободчикова</h3>
+            <p class="text-center text-sm-start">Заместитель главного редактора газеты «Иркутск»</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap justify-content-center justify-content-sm-start">
+              <a href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              <a class="redactionItemLink" href="mailto:marinasl@inbox.ru">marinasl@inbox.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="redactionItem box-shadow border-4 overflow-hidden">
+          <img src="img/admin/redaction/image-3.jpg" alt="image" class="redactionItemImg">
+          <div class="redactionItemContent">
+            <h3 class="redactionItemTitle h3 mb-2 mb-lg-0">Ольга Викторовна Королёва</h3>
+            <p class="text-center text-sm-start">Корреспондент газеты «Иркутск»</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap justify-content-center justify-content-sm-start">
+              <a href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              <a class="redactionItemLink" href="mailto:Ola1_07@mail.ru">Ola1_07@mail.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="redactionItem box-shadow border-4 overflow-hidden">
+          <img src="img/admin/redaction/image-4.jpg" alt="image" class="redactionItemImg">
+          <div class="redactionItemContent">
+            <h3 class="redactionItemTitle h3 mb-2 mb-lg-0">Некипелов Олег Олегович</h3>
+            <p class="text-center text-sm-start">Дизайнер</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap justify-content-center justify-content-sm-start">
+              <a href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              <a class="redactionItemLink" href="mailto:press@mauirk.ru">press@mauirk.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="redactionItem box-shadow border-4 overflow-hidden">
+          <img src="img/admin/redaction/image-5.jpg" alt="image" class="redactionItemImg">
+          <div class="redactionItemContent">
+            <h3 class="redactionItemTitle h3 mb-2 mb-lg-0">Карпов Валентин Владимирович</h3>
+            <p class="text-center text-sm-start">Фотокорреспондент</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap justify-content-center justify-content-sm-start">
+              <a href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              <a class="redactionItemLink" href="mailto:press@mauirk.ru">press@mauirk.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="redactionItem box-shadow border-4 overflow-hidden">
+          <img src="img/admin/redaction/image-6.jpg" alt="image" class="redactionItemImg">
+          <div class="redactionItemContent">
+            <h3 class="redactionItemTitle h3 mb-2 mb-lg-0">Алексей Николаевич Шандренко</h3>
+            <p class="text-center text-sm-start">Специалист по рекламе, распространению и продвижению газеты “Иркутск</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap justify-content-center justify-content-sm-start">
+              <a href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              <a href="tel:+79021715795">+7 (902) 171 57-95</a>
+              <a class="redactionItemLink" href="mailto:shan@mauirk.ru">shan@mauirk.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="h2 py-2 mb-3 mt-3">Иркутскинформ.рф</div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="redactionItem box-shadow border-4 overflow-hidden">
+          <img src="img/admin/redaction/image-7.jpg" alt="image" class="redactionItemImg">
+          <div class="redactionItemContent">
+            <h3 class="redactionItemTitle h3 mb-2 mb-lg-0">Нина Александровна Кремницер</h3>
+            <p class="text-center text-sm-start">Главный редактор сетевого издания Иркутскинформ.рф</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap justify-content-center justify-content-sm-start">
+              <a href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              <a href="tel:+79025608783">+7 (902) 560 87-83</a>
+              <a class="redactionItemLink" href="mailto:site@inbox.ru">site@inbox.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="redactionItem box-shadow border-4 overflow-hidden">
+          <img src="img/admin/redaction/image-8.jpg" alt="image" class="redactionItemImg">
+          <div class="redactionItemContent">
+            <h3 class="redactionItemTitle h3 mb-2 mb-lg-0">Оксана Валерьевна Предеина</h3>
+            <p class="text-center text-sm-start">Заместитель редактора сетевого издания Иркутскинформ.рф</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap justify-content-center justify-content-sm-start">
+              <a href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              <a class="redactionItemLink" href="mailto:makanore@yandex.ru">makanore@yandex.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="redactionItem box-shadow border-4 overflow-hidden">
+          <img src="img/admin/redaction/image-9.jpg" alt="image" class="redactionItemImg">
+          <div class="redactionItemContent">
+            <h3 class="redactionItemTitle h3 mb-2 mb-lg-0">Анжелика Александровна Лотоцкая</h3>
+            <p class="text-center text-sm-start">Корреспондент</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap flex-wrap justify-content-center justify-content-sm-start">
+              <a href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              <a class="redactionItemLink" href="mailto:radioirk@mail.ru">radioirk@mail.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="redactionItem box-shadow border-4 overflow-hidden">
+          <img src="img/admin/redaction/image-10.jpg" alt="image" class="redactionItemImg">
+          <div class="redactionItemContent">
+            <h3 class="redactionItemTitle h3 mb-2 mb-lg-0">Жанна Евгеньевна Богданова</h3>
+            <p class="text-center text-sm-start">Художественный редактор</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap flex-wrap justify-content-center justify-content-sm-start">
+              <a href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              <a class="redactionItemLink" href="mailto:radioirk@mail.ru">radioirk@mail.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>			
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footerW">
+      <div class="footerTop">
+        <nav class="headerNav">
+          <ul class="headerNavList d-flex flex-wrap fw-medium px-0">
+            <li>
+              <a href="#">
+                Культура
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Наука
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Общество
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Политика
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Происшествия
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Спорт
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Технологии
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Экономика
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Спецпроекты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- /footerTop -->
+      <div class="footerBottom">
+
+        <div class="row align-items-center">
+          <div class="col-sm-8">
+            <div class="headerContacts d-flex">
+              <div class="item d-flex gap-1">
+                <span>Телефон редакции:</span>
+                <a class="phone fw-semibold" href="tel:+73952261236">+7 (3952) 26-12-36</a>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-1">
+                  <span>Электронная почта редакции:</span>
+                  <a class="mail text--blue-2" href="mailto:site@mauirk.ru">site@mauirk.ru</a>
+                </div>
+              </div>
+              <div class="item socials">
+                <ul class="socialsList">
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-1.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-2.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow">
+                      <img src="img/admin/socials/icon-3.svg" alt="icon">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="headerTopRight d-flex align-items-start align-items-sm-end align-items-xl-center justify-content-end">
+              <ul class="d-flex flex-column flex-sm-row text--blue-2">
+                <li>
+                  <a href="#">
+                    Редакция
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Реклама
+                  </a>
+                </li>
+              </ul>
+              <button class="button button--blue-2 button--rounded">Сообщить новость</button>
+            </div>
+          </div>
+        </div>
+      </div><!-- /footerbottom -->
+    </div>
+  </div>
+</footer>
+
+<div class="overlay"></div>
+		<!-- modal -->
+<!-- person -->
+
+<div class="modal box-shadow" id="modal-person">
+
+  <div class="modalHead">
+    <div class="d-flex align-items-center gap-3">
+      <img src="img/admin/person/image-1.jpg" alt="image" class="modalPersonImg">
+      <div class="h4 modalPersonName">Верхозин
+        Евгений Анатольевич </div>
+    </div>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr">
+      тренер тренажёрного зала, персональный тренер, реабилитолог. Массажист. Специалист по мягкому фитнесу. Фитнес клуб
+      Matrix.
+    </p>
+
+    <div class="d-flex align-items-center justify-content-start justify-content-md-between flex-wrap gap-3">
+      <div class="d-flex gap-3 align-items-center">
+        <button class="button button--red">Голосовать</button>
+        <div class="d-flex gap-2">
+          <span class="fw-semibold"> 16</span>
+          <div class="modalPersonActionBtn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#like-up"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <button class="d-flex align-items-center gap-2 modalShareBtn">
+        <span class="fw-semibold d-none d-md-block">Поделиться ссылкой</span>
+        <img src="img/icons/share.svg" alt="share">
+      </button>
+    </div>
+
+  </div>
+</div>
+	</div>
+	
+	<script src="js/app.min.js"></script>
+
+
+	
+</body>
+
+</html>
+
+
+
+

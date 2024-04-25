@@ -1,0 +1,40 @@
+.breadcrumbs {
+ ul {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 5px;
+  flex-wrap: wrap;
+  @media(max-width: 575px){
+    flex-wrap: nowrap;
+  }
+  li {
+    position: relative;
+    font-size: 13px;
+    &:not(:last-child){
+      &::after {
+        content: '';
+        position: absolute;
+        right: -23px;
+        width: 16px;
+        height: 16px;
+        background: url("@img/icons/arrow-right.svg") no-repeat center center / 16px;
+        top: 5px;
+      }
+    }
+    a {
+      transition: color .2s linear;
+      @media(max-width: 575px){
+        white-space: nowrap;
+      }
+      &:hover {
+        color: var(--blue-2);
+      }
+    }
+    span {
+      @media(max-width: 575px){
+        white-space: nowrap;
+      }
+    }
+  }
+ }
+}

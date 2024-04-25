@@ -1,0 +1,90 @@
+<section class="sect pb-4">
+  <div class="container">
+    <div class="pageHead pb-2">
+      <div class="h1">Подкасты</div>
+    </div>
+
+    <div class="podcastMain mt-3">
+      <div class="podcastCard">
+        <div class="d-flex gap-0 gap-lg-4 flex-column flex-lg-row">
+          <div class="podcastCardImg">
+            <img src="@img/admin/podcast/person.jpg" alt="person">
+          </div>
+          <div class="podcastCardContent">
+            <button class="podcastCardBtn box-shadow">
+              <div class="podcastCardBtnPlay">
+                <img src="@img/icons/play.svg" alt="play">
+              </div>
+              <span class="podcastCardBtnText fw-semibold d-none d-lg-block">Слушать подкаст</span>
+              <img src="@img/icons/podcast.svg" alt="podcast" class="podcastCardBtnIcon">
+            </button>
+            <div class="cardText text--sm text--white fw-semibold bg--orange d-inline-block mb-3">
+              Культура
+            </div>
+            <div class="h2">Права потребителя: Беседа с консультантом вице-президентом Областной общественной организации по защите прав потребителей Виктором Низовцевым</div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /podcastMain -->
+
+    <div class="d-flex flex-column flex-lg-row py-3 justify-content-between align-items-start align-items-lg-center gap-3 flex-wrap mt-2 mt-md-4">
+      <ul class="d-flex flex-no-wrap flex-sm-wrap gap-3 text--sm fw-semibold overflowText overflowText--mr">
+        <li><a href="#">Культура</a></li>
+        <li><a href="">Наука</a></li>
+        <li><a href="">Общество</a></li>
+        <li><a href="">Политика</a></li>
+        <li><a href="">Происшествия</a> </li>
+        <li><a href="">Спорт</a></li>
+        <li><a href="">Технологии</a></li>
+        <li><a href="">Экономика</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3 newsActionW">
+        <button class="searchBtnSm d-none d-lg-block">
+          <img src="@img/icons/search.svg" alt="search">
+        </button>
+        <form class="newsSearchForm align-items-center search d-flex d-lg-none">           
+          <input class="searchInput" type="text" placeholder="Искать по новостям">
+          <button class="searchBtn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <button class="searchSortSm">
+          <img src="@img/icons/sort.svg" alt="search">
+        </button>
+      </div>
+    </div>
+
+    <div class="row podcastList">
+      <div class="col-sm-6 col-md-6 col-lg-4">
+        @@include('../podcast/article-card-1.html',{})
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4">
+        @@include('../podcast/article-card-2.html',{})
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4">
+        @@include('../baner/baner-horizontal-black.html',{})
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4">
+        @@include('../podcast/article-card-1.html',{})
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4">
+        @@include('../podcast/article-card-2.html',{})
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4">
+        @@include('../podcast/article-card-1.html',{})
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4">
+        @@include('../podcast/article-card-1.html',{})
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4">
+        @@include('../podcast/article-card-2.html',{})
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4">
+        @@include('../baner/baner-horizontal-black-2.html',{})
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body>
+	
+	<div class="wrapper">
+		<section class="sect p-0 intro">
+			<div class="container">
+				@@include('html/baner/baner--main.html',{})
+			</div>
+		</section>
+	
+		@@include('html/header.html',{})
+		<main class="main">		
+			@@include('html/main/intro.html',{})
+			@@include('html/main/main-articles.html',{})
+			@@include('html/main/content.html',{})
+			
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/modal.html',{})
+	</div>
+	
+	<script src="js/app.min.js"></script>
+
+
+	
+</body>
+
+</html>
+
+
+
+
