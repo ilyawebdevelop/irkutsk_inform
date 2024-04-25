@@ -15270,11 +15270,23 @@ h6 {
   .headerSearch {
     display: none;
     position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     width: 100%;
+    top: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .headerSearch {
+    top: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .headerSearch {
+    top: 23px;
+  }
+}
+@media (max-width: 575px) {
+  .headerSearch {
+    top: 18px;
   }
 }
 .headerSearch.active {

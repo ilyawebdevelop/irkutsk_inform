@@ -4,12 +4,21 @@
     @media(max-width: 991px) {
       display: none;
       position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      // top: 50%;
+      // -webkit-transform: translateY(-50%);
+      // -ms-transform: translateY(-50%);
+      // transform: translateY(-50%);
       width: 100%;
-
+      top: 14px;
+    }
+    @media(max-width: 991px){
+      top: 13px;
+    }
+    @media(max-width: 767px){
+      top: 23px;
+    }
+    @media(max-width: 575px){
+      top: 18px;
     }
 
     &.active {
