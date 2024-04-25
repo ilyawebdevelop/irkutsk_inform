@@ -15063,6 +15063,11 @@ h6 {
     top: 12px;
   }
 }
+@media (max-width: 575px) {
+  .filterBtn {
+    top: 10px;
+  }
+}
 
 /* Hamburger Menu */
 .hamburger {
