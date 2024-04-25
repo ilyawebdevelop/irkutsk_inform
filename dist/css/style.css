@@ -15271,6 +15271,8 @@ h6 {
     display: none;
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
   }
@@ -15362,6 +15364,8 @@ h6 {
     padding-top: 70px;
     padding-left: 20px;
     padding-right: 20px;
+    overflow-y: scroll;
+    padding-bottom: 80px;
   }
 }
 @media (max-width: 350px) {

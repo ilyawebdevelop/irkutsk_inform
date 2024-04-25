@@ -5,9 +5,13 @@
       display: none;
       position: absolute;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       width: 100%;
+
     }
+
     &.active {
       display: flex;
     }
@@ -51,11 +55,13 @@
   &Bottom {
     padding-top: 4px;
     padding-bottom: 16px;
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       position: relative;
       padding-bottom: 10px;
       padding-top: 10px;
     }
+
     @media(max-width: 767px) {
       padding-top: 20px;
       padding-bottom: 20px;
@@ -103,17 +109,21 @@
       padding-top: 70px;
       padding-left: 20px;
       padding-right: 20px;
+      overflow-y: scroll;
+      padding-bottom: 80px;
     }
 
     @media(max-width: 350px) {
       width: 270px;
     }
   }
-.headerNavList {
-  @media(max-width: 991px){
-    margin-bottom: 20px;
+
+  .headerNavList {
+    @media(max-width: 991px) {
+      margin-bottom: 20px;
+    }
   }
-}
+
   &Nav {
 
     &.active {
@@ -162,6 +172,7 @@
     }
   }
 }
+
 .headerNavCloseBtn {
   position: absolute;
   top: 29px;
