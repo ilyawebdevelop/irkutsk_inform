@@ -99,6 +99,11 @@
 
   span {
     border-bottom: 2px solid transparent;
-    transition: border-color .2s linear;
+    transition: border-color .1s linear;
   }
+}
+
+#modal-order {
+  width: 640px;
+  height: fit-content;
 }

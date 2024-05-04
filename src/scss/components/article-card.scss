@@ -42,7 +42,7 @@
       left: 0;
       top: 0;
       background: rgba(0, 0, 0, 0.3);
-      transition: background .2s linear;
+      transition: background .1s linear;
     }
   }
 
@@ -117,7 +117,7 @@
 
   &Title {
     margin-bottom: 20px;
-    transition: color .2s linear;
+    transition: color .1s linear;
     position: relative;
     z-index: 1;
 
@@ -131,7 +131,7 @@
   }
 
   &Img {
-    transition: opacity .2s linear;
+    transition: opacity .1s linear;
 
     img {
       height: 200px;
@@ -316,7 +316,7 @@
   right: -22px;
   top: 50%;
   transform: translateY(-50%);
-  transition: background-color .2s linear;
+  transition: background-color .1s linear;
 
   @media(max-width: 767px) {
     right: unset;
@@ -439,10 +439,10 @@
     }
 
     &Link {
-      transition: opacity .2s linear;
+      transition: opacity .1s linear;
 
       &:hover {
-        opacity: .9;
+        opacity: .9;       
       }
     }
   }
@@ -453,7 +453,7 @@
   position: relative;
 
   a.h3 {
-    transition: color .2s linear;
+    transition: color .1s linear;
 
     &:hover {
       color: var(--blue);

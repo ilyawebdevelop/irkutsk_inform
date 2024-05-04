@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   width: fit-content;
-  transition: background-color .2s linear, color .2s linear;
+  transition: background-color .1s linear, color .1s linear;
   height: 40px;
   border-radius: 4px;
   padding-left: 20px;
@@ -28,7 +28,7 @@
   &--blue {
     background-color: var(--blue-2);
     color: #fff;
-    transition: opacity .2s linear;
+    transition: opacity .1s linear;
 
     &:hover {
       opacity: .9;
@@ -38,7 +38,7 @@
   &--main-color {
     background-color: $main-color;
     color: #fff;
-    transition: opacity .2s linear;
+    transition: opacity .1s linear;
 
     &:hover {
       opacity: .9;
@@ -48,7 +48,7 @@
   &--red {
     background-color: var(--red);
     color: #fff;
-    transition: opacity .2s linear;
+    transition: opacity .1s linear;
 
     &:hover {
       opacity: .9;
@@ -85,7 +85,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  transition: background-color .2s linear;
+  transition: background-color .1s linear;
 
   &:hover {
     background-color: var(--blue);
@@ -131,7 +131,7 @@
   height: 48px;
 }
 .eventCardActionBtn {
-  transition: fill .2s linear;
+  transition: fill .1s linear;
   position: relative;
   bottom: 3px;
   pointer-events: none;

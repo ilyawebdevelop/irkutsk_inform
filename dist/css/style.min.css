@@ -14392,7 +14392,7 @@ table {
 
 .text--gray {
   color: var(--gray);
-  transition: color 0.2s linear;
+  transition: color 0.1s linear;
 }
 
 a.text--gray:hover {
@@ -14606,7 +14606,7 @@ h6 {
 
 .cardText {
   padding: 8px 10px;
-  border-radius: 0px 4px 4px 0;
+  border-radius: 4px 4px 4px 4px;
 }
 
 .border--red {
@@ -14629,7 +14629,7 @@ h6 {
 
 .page-numbers {
   border-bottom: 2px solid transparent;
-  transition: color 0.2s linear;
+  transition: color 0.1s linear;
 }
 .page-numbers:hover {
   color: var(--blue-2);
@@ -14654,7 +14654,7 @@ h6 {
 .nav-link svg {
   width: 20px;
   height: 20px;
-  transition: fill 0.2s linear;
+  transition: fill 0.1s linear;
 }
 .nav-link--active {
   border-bottom: 2px solid var(--blue-2);
@@ -14667,7 +14667,7 @@ h6 {
 .content > a {
   margin-bottom: 15px;
   color: var(--blue-2);
-  transition: color 0.2s linear;
+  transition: color 0.1s linear;
 }
 .content > a:hover {
   color: #000;
@@ -14724,6 +14724,11 @@ h6 {
   font-weight: 600;
   padding-left: 32px;
   background: url("../img/icons/doc.svg") no-repeat left top 3px/24px;
+  transition: color 0.1s linear, background 0.1s linear;
+}
+.docLink:hover {
+  color: #404040;
+  background: url("../img/icons/doc-black.svg") no-repeat left top 3px/24px;
 }
 
 .sep-date {
@@ -14880,7 +14885,7 @@ h6 {
   align-items: center;
   justify-content: center;
   width: fit-content;
-  transition: background-color 0.2s linear, color 0.2s linear;
+  transition: background-color 0.1s linear, color 0.1s linear;
   height: 40px;
   border-radius: 4px;
   padding-left: 20px;
@@ -14903,7 +14908,7 @@ h6 {
 .button--blue {
   background-color: var(--blue-2);
   color: #fff;
-  transition: opacity 0.2s linear;
+  transition: opacity 0.1s linear;
 }
 .button--blue:hover {
   opacity: 0.9;
@@ -14911,7 +14916,7 @@ h6 {
 .button--main-color {
   background-color: #404040;
   color: #fff;
-  transition: opacity 0.2s linear;
+  transition: opacity 0.1s linear;
 }
 .button--main-color:hover {
   opacity: 0.9;
@@ -14919,7 +14924,7 @@ h6 {
 .button--red {
   background-color: var(--red);
   color: #fff;
-  transition: opacity 0.2s linear;
+  transition: opacity 0.1s linear;
 }
 .button--red:hover {
   opacity: 0.9;
@@ -14950,7 +14955,7 @@ h6 {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  transition: background-color 0.2s linear;
+  transition: background-color 0.1s linear;
 }
 .searchBtn:hover {
   background-color: var(--blue);
@@ -14994,7 +14999,7 @@ h6 {
 }
 
 .eventCardActionBtn {
-  transition: fill 0.2s linear;
+  transition: fill 0.1s linear;
   position: relative;
   bottom: 3px;
   pointer-events: none;
@@ -15084,7 +15089,7 @@ h6 {
   margin-right: 0;
   cursor: pointer;
   position: relative;
-  transition: background 0.2s linear;
+  transition: background 0.1s linear;
   display: none;
 }
 @media (max-width: 991px) {
@@ -15195,7 +15200,12 @@ h6 {
 }
 .modalShareBtn span {
   border-bottom: 2px solid transparent;
-  transition: border-color 0.2s linear;
+  transition: border-color 0.1s linear;
+}
+
+#modal-order {
+  width: 640px;
+  height: fit-content;
 }
 
 .tabs__nav {
@@ -15255,7 +15265,7 @@ h6 {
   top: 5px;
 }
 .breadcrumbs ul li a {
-  transition: color 0.2s linear;
+  transition: color 0.1s linear;
 }
 @media (max-width: 575px) {
   .breadcrumbs ul li a {
@@ -15277,6 +15287,7 @@ h6 {
     position: absolute;
     width: 100%;
     top: 14px;
+    max-width: 100%;
   }
 }
 @media (max-width: 991px) {
@@ -15316,7 +15327,7 @@ h6 {
   column-gap: 30px;
 }
 .headerTopRight ul li a {
-  transition: color 0.2s linear;
+  transition: color 0.1s linear;
 }
 .headerTopRight ul li a:hover {
   color: #000;
@@ -15414,19 +15425,19 @@ h6 {
   }
 }
 .headerNavList li a {
-  transition: color 0.2s linear;
+  transition: color 0.1s linear;
 }
 .headerNavList li a:hover {
   color: var(--blue-2);
 }
 .header .phone {
-  transition: color 0.2s linear;
+  transition: color 0.1s linear;
 }
 .header .phone:hover {
   color: var(--blue-2);
 }
 .header .mail {
-  transition: color 0.2s linear;
+  transition: color 0.1s linear;
 }
 .header .mail:hover {
   color: #000;
@@ -15440,7 +15451,7 @@ h6 {
 
 .baner {
   position: relative;
-  transition: opacity 0.2s linear;
+  transition: opacity 0.1s linear;
 }
 .baner:hover {
   opacity: 0.9;
@@ -15507,10 +15518,10 @@ h6 {
   background-color: transparent;
 }
 .socialsList li a img {
-  transition: opacity 0.2s linear;
+  transition: opacity 0.1s linear;
 }
 .socialsList li a img:hover {
-  opacity: 0.9;
+  opacity: 0.6;
 }
 
 .articleCard--horizontal {
@@ -15550,7 +15561,7 @@ h6 {
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.3);
-  transition: background 0.2s linear;
+  transition: background 0.1s linear;
 }
 .articleCard--sm .articleCardImg img {
   min-width: 120px;
@@ -15610,7 +15621,7 @@ h6 {
 }
 .articleCardTitle {
   margin-bottom: 20px;
-  transition: color 0.2s linear;
+  transition: color 0.1s linear;
   position: relative;
   z-index: 1;
 }
@@ -15623,7 +15634,7 @@ h6 {
   color: var(--blue-2);
 }
 .articleCardImg {
-  transition: opacity 0.2s linear;
+  transition: opacity 0.1s linear;
 }
 .articleCardImg img {
   height: 200px;
@@ -15774,7 +15785,7 @@ h6 {
   right: -22px;
   top: 50%;
   transform: translateY(-50%);
-  transition: background-color 0.2s linear;
+  transition: background-color 0.1s linear;
 }
 @media (max-width: 767px) {
   .podcastCardPlay {
@@ -15894,7 +15905,7 @@ h6 {
   }
 }
 .docCardImgLink {
-  transition: opacity 0.2s linear;
+  transition: opacity 0.1s linear;
 }
 .docCardImgLink:hover {
   opacity: 0.9;
@@ -15905,7 +15916,7 @@ h6 {
   position: relative;
 }
 .portalCard a.h3 {
-  transition: color 0.2s linear;
+  transition: color 0.1s linear;
 }
 .portalCard a.h3:hover {
   color: var(--blue);
@@ -15981,6 +15992,13 @@ h6 {
     padding-right: 20px;
   }
 }
+.redactionItemContent a {
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.1s linear;
+}
+.redactionItemContent a:hover {
+  border-color: #000;
+}
 .redactionItemImg {
   width: 200px;
   object-fit: cover;
@@ -15995,6 +16013,12 @@ h6 {
 }
 .redactionItemLink {
   color: var(--blue-2);
+  transition: color 0.1s linear, border-color 0.1s linear;
+  border-bottom: 1px solid transparent;
+}
+.redactionItemLink:hover {
+  color: #000;
+  border-color: #000;
 }
 @media (max-width: 767px) {
   .redactionItemTitle {
@@ -16113,7 +16137,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s linear;
+  transition: background-color 0.1s linear;
 }
 
 .podcastCardContent {
