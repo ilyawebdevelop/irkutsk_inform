@@ -109,6 +109,18 @@ overlay?.addEventListener('click', (e) => {
 
 // Calendar Datepicker
 new AirDatepicker('#airdatepicker');
-new AirDatepicker('#airdatepicker_after', {
-  
+new AirDatepicker('#airdatepicker_after');
+
+let searchBtnSm = document.querySelector('.searchBtnSm');
+let newsSearchForm = document.querySelector('.newsSearchForm');
+
+searchBtnSm?.addEventListener('click', () => {
+  newsSearchForm.classList.toggle('active');
+});
+
+let searchSortSm = document.querySelector('.searchSortSm');
+let sortForm = document.querySelector('.sortForm');
+
+searchSortSm.addEventListener('click', () => {
+  sortForm.classList.toggle('active');
 });

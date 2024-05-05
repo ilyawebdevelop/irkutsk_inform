@@ -99,24 +99,26 @@ table {
   padding-left: 16px;
   padding-right: 40px;
   font-size: 16px;
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     padding-right: 30px;
   }
 
   &--date {
-    padding-right: 15px;   
+    padding-right: 15px;
     background: var(--gray-light) url('@img/icons/calendar.svg') no-repeat right 12px center / 20px;
   }
 
   &--search {
     width: 310px;
-  } 
+  }
 
   &::placeholder {
     color: #b0b0b0;
     font-size: 16px;
   }
 }
+
 .formText {
   width: 100%;
   background-color: var(--gray-light);
@@ -125,6 +127,7 @@ table {
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 16px;
+
   &::placeholder {
     color: #ADADAD;
   }
@@ -533,6 +536,7 @@ h6 {
   padding-left: 32px;
   background: url('@img/icons/doc.svg') no-repeat left top 3px / 24px;
   transition: color .1s linear, background .1s linear;
+
   &:hover {
     color: $main-color;
     background: url('@img/icons/doc-black.svg') no-repeat left top 3px / 24px;
@@ -646,43 +650,48 @@ h6 {
     display: flex;
   }
 }
+
 .portalSelect {
-  @media(max-width: 991px){
+  @media(max-width: 991px) {
     width: 100%;
   }
 }
+
 .podcastActionW {
-  @media(max-width: 991px){
+  @media(max-width: 991px) {
     width: 100%;
   }
 }
+
 .docContent {
   .h3 {
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
       font-size: 16px;
       margin-top: 20px;
     }
   }
 }
+
 @-webkit-keyframes shows {
   from {
-    opacity: 0;   
+    opacity: 0;
   }
 
   to {
-    opacity: 1;  
+    opacity: 1;
   }
 }
 
 @keyframes shows {
   from {
-    opacity: 0;  
+    opacity: 0;
   }
 
   to {
-    opacity: 1;   
+    opacity: 1;
   }
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -701,29 +710,36 @@ h6 {
     animation: shows .1s;
   }
 }
+
 .link-hover {
   transition: color .1s linear;
+
   &:hover {
     color: var(--red);
   }
 }
+
 #modal-order {
   .modalPersonName {
     max-width: 300px;
   }
 }
+
 .orderForm {
   margin-top: 20px;
 }
+
 .agreement {
   &Text {
     font-size: 13px;
     line-height: 15px;
+
     a {
       color: var(--blue-2);
       display: inline-block;
     }
   }
+
   &Input {
     &:checked {
       &+label {
@@ -732,6 +748,7 @@ h6 {
         }
       }
     }
+
     &+label {
       display: flex;
       column-gap: 10px;
@@ -739,6 +756,7 @@ h6 {
       cursor: pointer;
     }
   }
+
   .rect {
     border: 1px solid #ADADAD;
     border-radius: 4px;
@@ -747,6 +765,7 @@ h6 {
     height: 24px;
   }
 }
+
 .fileW {
   width: 240px;
   height: 240px;
@@ -755,14 +774,96 @@ h6 {
   position: relative;
   cursor: pointer;
 }
-.fileImg{
+
+.fileImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 4px;
 }
+
 .inputW--file-text {
   .formText {
     height: 190px;
+  }
+}
+
+.newsSearchForm {
+  display: none;
+
+  @media(max-width: 991px) {
+    display: flex;
+  }
+
+  &.active {
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    max-width: 100%;
+  }
+}
+
+.newsSearchForm--newspage.active {
+  max-width: calc(100% - 30px);
+}
+.newsSearchForm--newspage {
+  &+.sortForm {
+    @media(max-width: 1400px){
+      right: unset;
+      left: 0;
+    }
+  }
+}
+
+.sortForm {
+  position: absolute;
+  display: none;
+  top: 100%;
+  right: 0;
+  z-index: 2;
+  background-color: #fff;
+  width: 320px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  @media(max-width: 991px){
+    right: unset;
+    left: 0;
+  }
+  @media(max-width: 575px){
+    width: 100%;
+  }
+  &.active {
+    display: block;
+  }
+  
+  &Title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+
+  &List {
+    a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &--portal {
+    @media(max-width: 1400px){
+      right: unset;
+      left: 0;
+    }
+  }
+  &--gazeta {
+    right: unset;
+    left: 0;
   }
 }

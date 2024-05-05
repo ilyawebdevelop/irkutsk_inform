@@ -15733,6 +15733,85 @@ h6 {
   height: 190px;
 }
 
+.newsSearchForm {
+  display: none;
+}
+@media (max-width: 991px) {
+  .newsSearchForm {
+    display: flex;
+  }
+}
+.newsSearchForm.active {
+  display: flex;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  max-width: 100%;
+}
+
+.newsSearchForm--newspage.active {
+  max-width: calc(100% - 30px);
+}
+
+@media (max-width: 1400px) {
+  .newsSearchForm--newspage + .sortForm {
+    right: unset;
+    left: 0;
+  }
+}
+
+.sortForm {
+  position: absolute;
+  display: none;
+  top: 100%;
+  right: 0;
+  z-index: 2;
+  background-color: #fff;
+  width: 320px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+@media (max-width: 991px) {
+  .sortForm {
+    right: unset;
+    left: 0;
+  }
+}
+@media (max-width: 575px) {
+  .sortForm {
+    width: 100%;
+  }
+}
+.sortForm.active {
+  display: block;
+}
+.sortFormTitle {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+.sortFormList a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 1400px) {
+  .sortForm--portal {
+    right: unset;
+    left: 0;
+  }
+}
+.sortForm--gazeta {
+  right: unset;
+  left: 0;
+}
+
 .button {
   display: flex;
   align-items: center;
