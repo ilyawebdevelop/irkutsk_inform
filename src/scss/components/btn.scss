@@ -54,6 +54,10 @@
     &:hover {
       background-color: var(--blue-2);
     }
+    &:disabled {
+      background-color: #ADADAD;
+      pointer-events: none;
+    }
   }
 
   &--full {
@@ -210,5 +214,33 @@
 
   @media(max-width: 575px) {
     top: 10px;
+  }
+}
+.uploadBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  pointer-events: none;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.upload--gray {
+    background-color: #ADADAD;
+    border-radius: 4px;
+    svg {
+      stroke: #fff;
+    }
+  }
+  svg {
+    fill: transparent;
+    stroke: var(--blue-2);
+    width: 24px;
+    height: 24px;
+    stroke-width: 2px;
   }
 }

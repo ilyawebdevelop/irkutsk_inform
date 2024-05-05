@@ -520,7 +520,6 @@
   </div>
 </div>
 
-
 <!-- modal-order -->
 <div class="modal box-shadow" id="modal-order">
 
@@ -536,28 +535,36 @@
   </div>
 
   <div class="modalContent">
-    <p class="modalDescr">
-      Оставить заявку какой-то текст
-    </p>
 
     <form action="#" class="orderForm">
       <div class="inputW mb-2">
         <input class="formInput w-100" type="text" placeholder="Ваше имя">
       </div>
       <div class="inputW mb-2">
-        <input class="formInput w-100" type="email" placeholder="Ваш e-mail">
+        <input class="formInput w-100" type="email" placeholder="Email">
       </div>
       <div class="inputW mb-2">
-        <input class="formInput w-100" type="text" placeholder="Комментарий">
+        <input class="formInput w-100" type="tel" placeholder="Телефон">
       </div>
+      <div class="inputW mb-2">
+        <textarea class="formText" name="formText" id="formText" cols="30" rows="10"
+          placeholder="Сообщите вашу новость здесь"></textarea>
+      </div>
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+        <div class="agreement">
+          <input id="agreement-input" type="checkbox" class="agreementInput" hidden checked>
+          <label for="agreement-input">
+            <div class="rect"></div>
+            <div class="agreementText">
+              Я согласен на <a class="link-hover" href="#" target="_blank">обработку персональных данных</a>
+            </div>
+          </label>
+        </div>
+        <button class="button button--red">Отправить</button>
+      </div>
+
     </form>
 
-    <button class="button button--red">Отправить</button>
-    <div class="agreement mt-2">
-      <p>
-        Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
-      </p>
-    </div>
   </div>
 </div>
 
@@ -577,28 +584,59 @@
   </div>
 
   <div class="modalContent">
-    <p class="modalDescr">
-      Оставить заявку какой-то текст
-    </p>
 
     <form action="#" class="orderForm">
       <div class="inputW mb-2">
-        <input class="formInput w-100" type="text" placeholder="Имя участника">
+        <input class="formInput w-100" type="text" placeholder="Ваше имя">
       </div>
       <div class="inputW mb-2">
-        <input class="formInput w-100" type="tel" placeholder="Ваш телефон">
+        <input class="formInput w-100" type="email" placeholder="Email">
       </div>
       <div class="inputW mb-2">
-        <input class="formInput w-100" type="text" placeholder="Комментарий">
+        <input class="formInput w-100" type="tel" placeholder="Телефон">
+      </div>
+
+      <div class="d-flex gap-2 mt-3 flex-column flex-sm-row">
+        <div class="fileW">
+          <input type="file" hidden id="fileLoadInput">
+          <label class="fileW" for="fileLoadInput">
+            <img class="fileImg" src="img/admin/event/image-2.jpg" alt="image">
+            <!-- <button class="uploadBtn upload--blue">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#upload"></use>
+              </svg>
+            </button> -->
+            <button class="uploadBtn upload--gray">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#upload"></use>
+              </svg>
+            </button>
+          </label>
+        </div>
+        <div class="d-block w-100">
+          <div class="inputW mb-2">
+            <input type="text" class="formInput w-100" placeholder="Фамилия Имя Отчество участника">
+          </div>
+          <div class="inputW inputW--file-text">
+            <textarea name="formText" id="formText" cols="30" rows="10" class="formText w-100"
+              placeholder="Информация об участнике (max. 1000 символов)"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mt-3">
+        <div class="agreement">
+          <input id="agreement-input_1" type="checkbox" class="agreementInput" hidden checked>
+          <label for="agreement-input_1">
+            <div class="rect"></div>
+            <div class="agreementText">
+              Я согласен на <a class="link-hover" href="#" target="_blank">обработку персональных данных</a>
+            </div>
+          </label>
+        </div>
+        <button class="button button--red">Отправить</button>
       </div>
     </form>
-
-    <button class="button button--red">Отправить</button>
-    <div class="agreement mt-2">
-      <p>
-        Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
-      </p>
-    </div>
   </div>
 </div>
 	</div>

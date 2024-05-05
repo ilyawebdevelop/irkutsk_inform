@@ -35,6 +35,9 @@
 
 .fancybox__content {
   color: #000;
+  @media(max-width: 575px){
+    padding: 1.5rem;
+  }
 }
 
 #modal-person {
@@ -104,12 +107,12 @@
 }
 
 #modal-order {
-  width: 640px;
+  width: 800px;
   height: fit-content;
 }
 
 #modal-add-person {
-  width: 640px;
+  width: 800px;
   height: fit-content;
   .modalPersonName {
     max-width: 300px;

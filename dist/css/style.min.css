@@ -15117,6 +15117,11 @@ table {
   padding-right: 40px;
   font-size: 16px;
 }
+@media (max-width: 575px) {
+  .formInput {
+    padding-right: 30px;
+  }
+}
 .formInput--date {
   padding-right: 15px;
   background: var(--gray-light) url("../img/icons/calendar.svg") no-repeat right 12px center/20px;
@@ -15124,14 +15129,22 @@ table {
 .formInput--search {
   width: 310px;
 }
-@media (max-width: 1199px) {
-  .formInput {
-    padding-left: 24px;
-  }
-}
 .formInput::placeholder {
   color: #b0b0b0;
   font-size: 16px;
+}
+
+.formText {
+  width: 100%;
+  background-color: var(--gray-light);
+  height: 160px;
+  padding-top: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+.formText::placeholder {
+  color: #ADADAD;
 }
 
 .fw-medium {
@@ -15671,6 +15684,55 @@ h6 {
   max-width: 300px;
 }
 
+.orderForm {
+  margin-top: 20px;
+}
+
+.agreementText {
+  font-size: 13px;
+  line-height: 15px;
+}
+.agreementText a {
+  color: var(--blue-2);
+  display: inline-block;
+}
+.agreementInput:checked + label .rect {
+  background: url("../img/icons/checked.svg") no-repeat center center/16px;
+}
+.agreementInput + label {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.agreement .rect {
+  border: 1px solid #ADADAD;
+  border-radius: 4px;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+}
+
+.fileW {
+  width: 240px;
+  height: 240px;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.fileImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.inputW--file-text .formText {
+  height: 190px;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -15719,6 +15781,10 @@ h6 {
 }
 .button--red:hover {
   background-color: var(--blue-2);
+}
+.button--red:disabled {
+  background-color: #ADADAD;
+  pointer-events: none;
 }
 .button--full {
   width: 100%;
@@ -15865,6 +15931,35 @@ h6 {
   }
 }
 
+.uploadBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  pointer-events: none;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.uploadBtn.upload--gray {
+  background-color: #ADADAD;
+  border-radius: 4px;
+}
+.uploadBtn.upload--gray svg {
+  stroke: #fff;
+}
+.uploadBtn svg {
+  fill: transparent;
+  stroke: var(--blue-2);
+  width: 24px;
+  height: 24px;
+  stroke-width: 2px;
+}
+
 /* Hamburger Menu */
 .hamburger {
   align-self: center;
@@ -15938,6 +16033,11 @@ h6 {
 .fancybox__content {
   color: #000;
 }
+@media (max-width: 575px) {
+  .fancybox__content {
+    padding: 1.5rem;
+  }
+}
 
 #modal-person {
   padding: 30px 40px 30px 30px;
@@ -15995,12 +16095,12 @@ h6 {
 }
 
 #modal-order {
-  width: 640px;
+  width: 800px;
   height: fit-content;
 }
 
 #modal-add-person {
-  width: 640px;
+  width: 800px;
   height: fit-content;
 }
 #modal-add-person .modalPersonName {
