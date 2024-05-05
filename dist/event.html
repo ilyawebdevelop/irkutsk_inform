@@ -145,7 +145,7 @@
                   </a>
                 </li>
               </ul>
-              <button class="button headerBtn d-flex d-lg-none button--blue-2 mx-auto mt-3">Сообщить новость</button>
+              <button class="button headerBtn d-flex d-lg-none button--blue-2 mx-auto mt-3" data-fancybox data-src="#modal-order">Сообщить новость</button>
               <div class="headerNavCloseBtn d-block d-lg-none">
                 <img src="img/icons/btn-close.svg" alt="icon">
               </div>
@@ -206,8 +206,8 @@
         <div
           class="d-flex flex-column flex-lg-row py-3 justify-content-between align-items-start align-items-lg-center gap-3 flex-wrap">
           <ul class="d-flex flex-wrap gap-3 text--sm fw-semibold">
-            <li><a href="#">Топ-10</a></li>
-            <li><a href="">Положение о конкурсе</a></li>
+            <li><a class="link-hover" href="#">Топ-10</a></li>
+            <li><a class="link-hover" href="">Положение о конкурсе</a></li>
           </ul>
           <div class="d-flex flex-column-reverse flex-lg-row align-items-start align-items-lg-center gap-3 newsActionW">
 
@@ -227,7 +227,7 @@
                 <img src="img/icons/sort.svg" alt="search">
               </button>
             </div>
-            <button class="button button--blue button--gap button--lg w-100">
+            <button class="button button--blue button--gap button--lg w-100" data-fancybox data-src="#modal-add-person">
               <img src="img/icons/plus.svg" alt="plus">
               Добавить участника
             </button>
@@ -462,12 +462,12 @@
             <div class="headerContacts d-flex">
               <div class="item d-flex gap-1">
                 <span>Телефон редакции:</span>
-                <a class="phone fw-semibold" href="tel:+73952261236">+7 (3952) 26-12-36</a>
+                <a class="phone fw-semibold link-hover" href="tel:+73952261236">+7 (3952) 26-12-36</a>
               </div>
               <div class="item">
                 <div class="d-flex gap-1">
                   <span>Электронная почта редакции:</span>
-                  <a class="mail text--blue-2" href="mailto:site@mauirk.ru">site@mauirk.ru</a>
+                  <a class="mail text--blue-2 link-hover" href="mailto:site@mauirk.ru">site@mauirk.ru</a>
                 </div>
               </div>
               <div class="item socials">
@@ -505,7 +505,7 @@
                   </a>
                 </li>
               </ul>
-              <button class="button button--blue-2 button--rounded">Сообщить новость</button>
+              <button class="button button--blue-2 button--rounded" data-fancybox data-src="#modal-order">Сообщить новость</button>
             </div>
           </div>
         </div>
@@ -560,11 +560,12 @@
 </div>
 
 
+<!-- modal-order -->
 <div class="modal box-shadow" id="modal-order">
 
   <div class="modalHead">
     <div class="d-flex align-items-center gap-3">
-      <div class="h2 modalPersonName">Оставить заявку </div>
+      <div class="h2 modalPersonName">Сообщить новость </div>
     </div>
     <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24" tabindex="-1">
@@ -584,6 +585,47 @@
       </div>
       <div class="inputW mb-2">
         <input class="formInput w-100" type="email" placeholder="Ваш e-mail">
+      </div>
+      <div class="inputW mb-2">
+        <input class="formInput w-100" type="text" placeholder="Комментарий">
+      </div>
+    </form>
+
+    <button class="button button--red">Отправить</button>
+    <div class="agreement mt-2">
+      <p>
+        Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal-add-person -->
+<div class="modal box-shadow" id="modal-add-person">
+
+  <div class="modalHead">
+    <div class="d-flex align-items-center gap-3">
+      <div class="h2 modalPersonName">Добавить участника </div>
+    </div>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr">
+      Оставить заявку какой-то текст
+    </p>
+
+    <form action="#" class="orderForm">
+      <div class="inputW mb-2">
+        <input class="formInput w-100" type="text" placeholder="Имя участника">
+      </div>
+      <div class="inputW mb-2">
+        <input class="formInput w-100" type="tel" placeholder="Ваш телефон">
       </div>
       <div class="inputW mb-2">
         <input class="formInput w-100" type="text" placeholder="Комментарий">

@@ -145,7 +145,7 @@
                   </a>
                 </li>
               </ul>
-              <button class="button headerBtn d-flex d-lg-none button--blue-2 mx-auto mt-3">Сообщить новость</button>
+              <button class="button headerBtn d-flex d-lg-none button--blue-2 mx-auto mt-3" data-fancybox data-src="#modal-order">Сообщить новость</button>
               <div class="headerNavCloseBtn d-block d-lg-none">
                 <img src="img/icons/btn-close.svg" alt="icon">
               </div>
@@ -324,7 +324,8 @@
             обозначили в нем основные вехи.
           </p>
 
-          <div class="flex-column-reverse d-flex align-items-start flex-sm-row fd-flex align-items-sm-center justify-content-between flex-wrap mt-4 mb-5">
+          <div
+            class="flex-column-reverse d-flex align-items-start flex-sm-row fd-flex align-items-sm-center justify-content-between flex-wrap mt-4 mb-5">
             <div class="d-flex align-items-center gap-3">
 
               <span class="text--sm">Поделиться в соцсетях:</span>
@@ -485,7 +486,7 @@
         <a class="baner baner--horizontal border-4 overflow-hidden mb-3" href="#">
   <img class="banerImg" src="img/admin/baner/image-4.jpg" alt="baner">
   <div class="banerTitle">Рекламный баннер </div>  
-</a>  
+</a>
         <div class="articleCard articleCard--vertical box-shadow border-4 overflow-hidden mb-5">
   <a href="#" class="articleCardImg">
     <img src="img/admin/article/image-2.jpg" alt="image">
@@ -505,12 +506,16 @@
             Самое читаемое
           </h2>
           <div class="d-flex gap-4 flex-wrap mb-4 fw-semibold">
-            <a href="#">За неделю</a>
-            <a class="text--gray" href="#">За месяц</a>
-            <a class="text--gray" href="#">За год</a>
-          </div>
-        </div>
-        <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+
+            <div class="tabs sidebarTabs" data-tabs="popup">
+              <ul class="tabs__nav">
+                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">За неделю</button></li>
+                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">За месяц</button></li>
+                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">За год</button></li>
+              </ul>
+              <div class="tabs__content">
+                <div class="tabs__panel">
+                  <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
   <div class="d-flex">
     <a href="#" class="articleCardImg">
       <img class="border-4" src="img/admin/article/image-5.jpg" alt="image">
@@ -526,7 +531,7 @@
     </div>
   </div>
 </div>
-        <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+                  <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
   <div class="d-flex">
     <a href="#" class="articleCardImg">
       <img class="border-4" src="img/admin/article/image-1.jpg" alt="image">
@@ -542,7 +547,7 @@
     </div>
   </div>
 </div>
-        <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+                  <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
   <div class="d-flex">
     <a href="#" class="articleCardImg">
       <img class="border-4" src="img/admin/article/image-2.jpg" alt="image">
@@ -558,7 +563,7 @@
     </div>
   </div>
 </div>
-        <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+                  <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
   <div class="d-flex">
     <a href="#" class="articleCardImg">
       <img class="border-4" src="img/admin/article/image-3.jpg" alt="image">
@@ -574,6 +579,146 @@
     </div>
   </div>
 </div>
+                </div>
+                <div class="tabs__panel">
+                  <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+  <div class="d-flex">
+    <a href="#" class="articleCardImg">
+      <img class="border-4" src="img/admin/article/image-3.jpg" alt="image">
+    </a>
+    <div class="articleCardContent">
+      <a href="#" class="articleCardTitle h4 fw-semibold">
+        В Иркутске выделили автомобиль для сбора гуманитарной помощи по городу
+      </a>
+      <div class="d-flex gap-3 text--sm flex-wrap">
+        <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+        <div class="articleCardDate text--sm">26 марта 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+                  <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+  <div class="d-flex">
+    <a href="#" class="articleCardImg">
+      <img class="border-4" src="img/admin/article/image-5.jpg" alt="image">
+    </a>
+    <div class="articleCardContent">
+      <a href="#" class="articleCardTitle h4 fw-semibold">
+        Выплату контрактникам, участвующим в СВО, увеличили в Приангарье до 400 тысяч рублей
+      </a>
+      <div class="d-flex gap-3 text--sm flex-wrap">
+        <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+        <div class="articleCardDate text--sm">26 марта 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+                  <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+  <div class="d-flex">
+    <a href="#" class="articleCardImg">
+      <img class="border-4" src="img/admin/article/image-1.jpg" alt="image">
+    </a>
+    <div class="articleCardContent">
+      <a href="#" class="articleCardTitle h4 fw-semibold">
+        Благоустройство Иерусалимской горы продолжится в этом году в Иркутске
+      </a>
+      <div class="d-flex gap-3 text--sm flex-wrap">
+        <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+        <div class="articleCardDate text--sm">26 марта 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+                  <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+  <div class="d-flex">
+    <a href="#" class="articleCardImg">
+      <img class="border-4" src="img/admin/article/image-2.jpg" alt="image">
+    </a>
+    <div class="articleCardContent">
+      <a href="#" class="articleCardTitle h4 fw-semibold">
+        Электронный проездной билет на общественный транспорт можно приобрести в Иркутске
+      </a>
+      <div class="d-flex gap-3 text--sm flex-wrap">
+        <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+        <div class="articleCardDate text--sm">26 марта 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                </div>
+                <div class="tabs__panel">
+                  <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+  <div class="d-flex">
+    <a href="#" class="articleCardImg">
+      <img class="border-4" src="img/admin/article/image-2.jpg" alt="image">
+    </a>
+    <div class="articleCardContent">
+      <a href="#" class="articleCardTitle h4 fw-semibold">
+        Электронный проездной билет на общественный транспорт можно приобрести в Иркутске
+      </a>
+      <div class="d-flex gap-3 text--sm flex-wrap">
+        <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+        <div class="articleCardDate text--sm">26 марта 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+                  <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+  <div class="d-flex">
+    <a href="#" class="articleCardImg">
+      <img class="border-4" src="img/admin/article/image-3.jpg" alt="image">
+    </a>
+    <div class="articleCardContent">
+      <a href="#" class="articleCardTitle h4 fw-semibold">
+        В Иркутске выделили автомобиль для сбора гуманитарной помощи по городу
+      </a>
+      <div class="d-flex gap-3 text--sm flex-wrap">
+        <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+        <div class="articleCardDate text--sm">26 марта 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+                  <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+  <div class="d-flex">
+    <a href="#" class="articleCardImg">
+      <img class="border-4" src="img/admin/article/image-5.jpg" alt="image">
+    </a>
+    <div class="articleCardContent">
+      <a href="#" class="articleCardTitle h4 fw-semibold">
+        Выплату контрактникам, участвующим в СВО, увеличили в Приангарье до 400 тысяч рублей
+      </a>
+      <div class="d-flex gap-3 text--sm flex-wrap">
+        <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+        <div class="articleCardDate text--sm">26 марта 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+                  <div class="articleCard articleCard--sm articleCard--horizontal mb-4">
+  <div class="d-flex">
+    <a href="#" class="articleCardImg">
+      <img class="border-4" src="img/admin/article/image-1.jpg" alt="image">
+    </a>
+    <div class="articleCardContent">
+      <a href="#" class="articleCardTitle h4 fw-semibold">
+        Благоустройство Иерусалимской горы продолжится в этом году в Иркутске
+      </a>
+      <div class="d-flex gap-3 text--sm flex-wrap">
+        <a href="#" class="articleCardCat fw-semibold text--sm icon--blue-2">Общество</a>
+        <div class="articleCardDate text--sm">26 марта 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
 
       </div>
     </div>
@@ -642,12 +787,12 @@
             <div class="headerContacts d-flex">
               <div class="item d-flex gap-1">
                 <span>Телефон редакции:</span>
-                <a class="phone fw-semibold" href="tel:+73952261236">+7 (3952) 26-12-36</a>
+                <a class="phone fw-semibold link-hover" href="tel:+73952261236">+7 (3952) 26-12-36</a>
               </div>
               <div class="item">
                 <div class="d-flex gap-1">
                   <span>Электронная почта редакции:</span>
-                  <a class="mail text--blue-2" href="mailto:site@mauirk.ru">site@mauirk.ru</a>
+                  <a class="mail text--blue-2 link-hover" href="mailto:site@mauirk.ru">site@mauirk.ru</a>
                 </div>
               </div>
               <div class="item socials">
@@ -685,7 +830,7 @@
                   </a>
                 </li>
               </ul>
-              <button class="button button--blue-2 button--rounded">Сообщить новость</button>
+              <button class="button button--blue-2 button--rounded" data-fancybox data-src="#modal-order">Сообщить новость</button>
             </div>
           </div>
         </div>
@@ -740,11 +885,12 @@
 </div>
 
 
+<!-- modal-order -->
 <div class="modal box-shadow" id="modal-order">
 
   <div class="modalHead">
     <div class="d-flex align-items-center gap-3">
-      <div class="h2 modalPersonName">Оставить заявку </div>
+      <div class="h2 modalPersonName">Сообщить новость </div>
     </div>
     <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24" tabindex="-1">
@@ -764,6 +910,47 @@
       </div>
       <div class="inputW mb-2">
         <input class="formInput w-100" type="email" placeholder="Ваш e-mail">
+      </div>
+      <div class="inputW mb-2">
+        <input class="formInput w-100" type="text" placeholder="Комментарий">
+      </div>
+    </form>
+
+    <button class="button button--red">Отправить</button>
+    <div class="agreement mt-2">
+      <p>
+        Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal-add-person -->
+<div class="modal box-shadow" id="modal-add-person">
+
+  <div class="modalHead">
+    <div class="d-flex align-items-center gap-3">
+      <div class="h2 modalPersonName">Добавить участника </div>
+    </div>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr">
+      Оставить заявку какой-то текст
+    </p>
+
+    <form action="#" class="orderForm">
+      <div class="inputW mb-2">
+        <input class="formInput w-100" type="text" placeholder="Имя участника">
+      </div>
+      <div class="inputW mb-2">
+        <input class="formInput w-100" type="tel" placeholder="Ваш телефон">
       </div>
       <div class="inputW mb-2">
         <input class="formInput w-100" type="text" placeholder="Комментарий">

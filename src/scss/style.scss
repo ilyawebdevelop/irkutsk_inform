@@ -7,6 +7,9 @@
 // fancybox
 @import './fancybox';
 
+//Стили для календаря
+@import "../../node_modules/air-datepicker/air-datepicker";
+
 // Базовые подключения
 @import 'vars';
 @import 'mixins';
@@ -27,6 +30,7 @@
 @import "./components/redaction";
 @import "./components/article";
 @import "./components/podcast";
+@import "./components/contacts";
 
 
 @import "./components/footer";

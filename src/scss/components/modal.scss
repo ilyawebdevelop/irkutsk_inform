@@ -107,3 +107,11 @@
   width: 640px;
   height: fit-content;
 }
+
+#modal-add-person {
+  width: 640px;
+  height: fit-content;
+  .modalPersonName {
+    max-width: 300px;
+  }
+}

@@ -10,7 +10,8 @@
   border-radius: 4px;
   padding-left: 20px;
   padding-right: 20px;
-  @media(max-width: 767px){
+
+  @media(max-width: 767px) {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -28,30 +29,30 @@
   &--blue {
     background-color: var(--blue-2);
     color: #fff;
-    transition: opacity .1s linear;
+    transition: background-color .1s linear;
 
     &:hover {
-      opacity: .9;
+      background-color: var(--red);
     }
   }
 
   &--main-color {
     background-color: $main-color;
     color: #fff;
-    transition: opacity .1s linear;
+    transition: background-color .1s linear;
 
     &:hover {
-      opacity: .9;
+      background-color: var(--blue-2);
     }
   }
 
   &--red {
     background-color: var(--red);
     color: #fff;
-    transition: opacity .1s linear;
+    transition: background-color .1s linear;
 
     &:hover {
-      opacity: .9;
+      background-color: var(--blue-2);
     }
   }
 
@@ -103,7 +104,8 @@
 .podcastCardBtn {
   position: relative;
   margin-right: 16px;
-  @media(max-width: 767px){
+
+  @media(max-width: 767px) {
     display: flex;
     align-items: center;
     column-gap: 20px;
@@ -130,6 +132,7 @@
 .docCardBtn {
   height: 48px;
 }
+
 .eventCardActionBtn {
   transition: fill .1s linear;
   position: relative;
@@ -141,11 +144,13 @@
   //   }
   // }
 }
+
 .eventCardBtn {
   font-weight: 600;
   position: relative;
   z-index: 1;
 }
+
 .podcastMain .podcastCardBtn {
   display: flex;
   align-items: center;
@@ -155,27 +160,32 @@
   padding: 8px;
   background-color: #fff;
   margin-bottom: 40px;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     position: absolute;
     top: 40px;
-    left: 110px;    
+    left: 110px;
   }
-  @media(max-width: 767px){
+
+  @media(max-width: 767px) {
     top: 25px;
     left: 90px;
   }
-  
+
   &:hover {
     .podcastCardBtnPlay {
       background-color: var(--blue);
     }
   }
 }
+
 .headerSearchBtn {
   display: none;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     display: block;
   }
+
   svg {
     stroke: var(--gray);
     fill: transparent;
@@ -183,18 +193,22 @@
     height: 20px;
   }
 }
+
 .archiveBtn {
-  @media(max-width: 575px){
+  @media(max-width: 575px) {
     width: 100%;
   }
 }
+
 .filterBtn {
   min-width: 24px;
-  @media(max-width: 1199px){
+
+  @media(max-width: 1199px) {
     position: relative;
     top: 12px;
   }
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     top: 10px;
   }
 }

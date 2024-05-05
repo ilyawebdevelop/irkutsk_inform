@@ -32,3 +32,36 @@
     }
   }
 }
+.sidebarTabs {
+  .tabs__nav {
+    column-gap: 16px;
+  }
+  .tabs__nav-btn {
+    background-color: transparent;
+    color: #ADADAD;
+    height: fit-content;
+    padding-left: 0;
+    padding-right: 0;
+    transition: color .1s linear;
+    &:hover {
+      color: var(--red);
+    }
+    &--active {
+      color: #404040;
+      background-color: transparent;
+      height: fit-content;
+      padding-left: 0;
+      padding-right: 0;
+      pointer-events: none;
+      &:hover {
+        color: #404040;
+      }
+    }
+  }
+  .tabs__content {
+    margin-top: 40px;
+    @media(max-width: 991px){
+      margin-top: 30px;
+    }
+  }
+}

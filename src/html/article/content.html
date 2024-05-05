@@ -142,7 +142,8 @@
             обозначили в нем основные вехи.
           </p>
 
-          <div class="flex-column-reverse d-flex align-items-start flex-sm-row fd-flex align-items-sm-center justify-content-between flex-wrap mt-4 mb-5">
+          <div
+            class="flex-column-reverse d-flex align-items-start flex-sm-row fd-flex align-items-sm-center justify-content-between flex-wrap mt-4 mb-5">
             <div class="d-flex align-items-center gap-3">
 
               <span class="text--sm">Поделиться в соцсетях:</span>
@@ -186,22 +187,46 @@
         </div>
       </div>
       <div class="col-lg-4">
-        @@include('../baner/baner-horizontal-3.html',{})  
+        @@include('../baner/baner-horizontal-3.html',{})
         @@include('../article-card/article-card-vertical-1-fit.html',{})
         <div class="articleRelated">
           <h2 class="h2 mb-3">
             Самое читаемое
           </h2>
           <div class="d-flex gap-4 flex-wrap mb-4 fw-semibold">
-            <a href="#">За неделю</a>
-            <a class="text--gray" href="#">За месяц</a>
-            <a class="text--gray" href="#">За год</a>
+
+            <div class="tabs sidebarTabs" data-tabs="popup">
+              <ul class="tabs__nav">
+                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">За неделю</button></li>
+                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">За месяц</button></li>
+                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">За год</button></li>
+              </ul>
+              <div class="tabs__content">
+                <div class="tabs__panel">
+                  @@include('../article-card/article-card-sm-1.html',{})
+                  @@include('../article-card/article-card-sm-2.html',{})
+                  @@include('../article-card/article-card-sm-3.html',{})
+                  @@include('../article-card/article-card-sm-4.html',{})
+                </div>
+                <div class="tabs__panel">
+                  @@include('../article-card/article-card-sm-4.html',{})
+                  @@include('../article-card/article-card-sm-1.html',{})
+                  @@include('../article-card/article-card-sm-2.html',{})
+                  @@include('../article-card/article-card-sm-3.html',{})
+
+                </div>
+                <div class="tabs__panel">
+                  @@include('../article-card/article-card-sm-3.html',{})
+                  @@include('../article-card/article-card-sm-4.html',{})
+                  @@include('../article-card/article-card-sm-1.html',{})
+                  @@include('../article-card/article-card-sm-2.html',{})
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-        @@include('../article-card/article-card-sm-1.html',{})
-        @@include('../article-card/article-card-sm-2.html',{})
-        @@include('../article-card/article-card-sm-3.html',{})
-        @@include('../article-card/article-card-sm-4.html',{})
+
 
       </div>
     </div>

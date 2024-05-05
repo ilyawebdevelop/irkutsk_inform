@@ -102,6 +102,7 @@ table {
 
   &--date {
     padding-right: 15px;   
+    background: var(--gray-light) url('@img/icons/calendar.svg') no-repeat right 12px center / 20px;
   }
 
   &--search {
@@ -685,7 +686,18 @@ h6 {
   &.active {
     visibility: visible;
     opacity: 1;
-    -webkit-animation: shows .3s;
-    animation: shows .3s;
+    -webkit-animation: shows .1s;
+    animation: shows .1s;
+  }
+}
+.link-hover {
+  transition: color .1s linear;
+  &:hover {
+    color: var(--red);
+  }
+}
+#modal-order {
+  .modalPersonName {
+    max-width: 300px;
   }
 }

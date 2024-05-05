@@ -43,11 +43,12 @@
 </div>
 
 
+<!-- modal-order -->
 <div class="modal box-shadow" id="modal-order">
 
   <div class="modalHead">
     <div class="d-flex align-items-center gap-3">
-      <div class="h2 modalPersonName">Оставить заявку </div>
+      <div class="h2 modalPersonName">Сообщить новость </div>
     </div>
     <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24" tabindex="-1">
@@ -67,6 +68,47 @@
       </div>
       <div class="inputW mb-2">
         <input class="formInput w-100" type="email" placeholder="Ваш e-mail">
+      </div>
+      <div class="inputW mb-2">
+        <input class="formInput w-100" type="text" placeholder="Комментарий">
+      </div>
+    </form>
+
+    <button class="button button--red">Отправить</button>
+    <div class="agreement mt-2">
+      <p>
+        Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal-add-person -->
+<div class="modal box-shadow" id="modal-add-person">
+
+  <div class="modalHead">
+    <div class="d-flex align-items-center gap-3">
+      <div class="h2 modalPersonName">Добавить участника </div>
+    </div>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr">
+      Оставить заявку какой-то текст
+    </p>
+
+    <form action="#" class="orderForm">
+      <div class="inputW mb-2">
+        <input class="formInput w-100" type="text" placeholder="Имя участника">
+      </div>
+      <div class="inputW mb-2">
+        <input class="formInput w-100" type="tel" placeholder="Ваш телефон">
       </div>
       <div class="inputW mb-2">
         <input class="formInput w-100" type="text" placeholder="Комментарий">

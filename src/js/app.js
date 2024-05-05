@@ -1,16 +1,23 @@
 import * as flsFunctions from "./modules/functions.js";
 import "./modules/jquery-3.7.1.min.js";
+import "./modules/inputmask.min.js";
 
 import { Fancybox } from "./modules/fancybox.esm.js";
 
 import "./modules/bootstrap.bundle.min.js";
 import './components.js';
 
+import AirDatepicker from 'air-datepicker';
+
 flsFunctions.isWebp();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: false,
 });
+
+let inputs = document.querySelectorAll('input[type="tel"]');
+let im = new Inputmask('+7 (999) 999-99-99');
+im.mask(inputs);
 
 // Import swiper
 import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar } from 'swiper';
@@ -32,7 +39,7 @@ var mySwiperContent = new Swiper(contentSlider, {
     },
     768: {
       slidesPerView: 2,
-    },   
+    },
   },
   navigation: {
     prevEl: document.querySelector('.contentSliderW .navArrowPrev'),
@@ -98,4 +105,10 @@ overlay?.addEventListener('click', (e) => {
   menu.classList.remove('active');
   btnMenu.classList.remove('active');
   bodyEl.classList.remove('hidden');
+});
+
+// Calendar Datepicker
+new AirDatepicker('#airdatepicker');
+new AirDatepicker('#airdatepicker_after', {
+  
 });

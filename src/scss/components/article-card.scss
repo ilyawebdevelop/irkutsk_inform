@@ -124,6 +124,9 @@
     @media(max-width: 991px) {
       margin-bottom: 16px;
     }
+    @media(max-width: 575px){
+      margin-bottom: 8px;
+    }
 
     &:hover {
       color: var(--blue-2);

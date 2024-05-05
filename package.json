@@ -15,7 +15,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"@popperjs/core": "^2.11.2",
-		"air-datepicker": "^3.3.5",
+		"air-datepicker": "^3.5.0",
 		"aos": "^2.3.4",
 		"file-loader": "^6.2.0",
 		"graph-modal": "^1.0.4",
