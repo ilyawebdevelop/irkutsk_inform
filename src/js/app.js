@@ -113,14 +113,19 @@ new AirDatepicker('#airdatepicker_after');
 
 let searchBtnSm = document.querySelector('.searchBtnSm');
 let newsSearchForm = document.querySelector('.newsSearchForm');
+let newsSearchClose = document.querySelector('.newsSearchClose');
 
 searchBtnSm?.addEventListener('click', () => {
   newsSearchForm.classList.toggle('active');
 });
+newsSearchClose?.addEventListener('click', () => {
+  newsSearchForm.classList.remove('active');
+});
+
 
 let searchSortSm = document.querySelector('.searchSortSm');
 let sortForm = document.querySelector('.sortForm');
 
-searchSortSm.addEventListener('click', () => {
+searchSortSm?.addEventListener('click', () => {
   sortForm.classList.toggle('active');
 });
